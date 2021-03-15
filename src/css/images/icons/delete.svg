@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="25"
+     viewBox="0 0 22 25">
+    <defs>
+
+        <clipPath id="ahzkf">
+            <use fill="#fff" xlink:href="#ahzka"/>
+        </clipPath>
+        <clipPath id="ahzkg">
+            <use fill="#fff" xlink:href="#ahzkb"/>
+        </clipPath>
+        <clipPath id="ahzkh">
+            <use fill="#fff" xlink:href="#ahzkc"/>
+        </clipPath>
+        <clipPath id="ahzki">
+            <use fill="#fff" xlink:href="#ahzkd"/>
+        </clipPath>
+        <clipPath id="ahzkj">
+            <use fill="#fff" xlink:href="#ahzke"/>
+        </clipPath>
+    </defs>
+
+    <path fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" transform="translate(-3707 -525)"
+          d="M3726 531.06l-.94 15.95c0 1.1-.84 1.99-1.87 1.99h-11.38c-1.03 0-1.87-.9-1.87-2l-.94-15.94"/>
+
+    <path fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" transform="translate(-3707 -525)"
+          d="M3713 529v-2a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v2"/>
+
+    <path fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" transform="translate(-3707 -525)"
+          d="M3716 531v14"/>
+
+    <path fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" transform="translate(-3707 -525)"
+          d="M3720 531v14"/>
+
+    <path fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" transform="translate(-3707 -525)"
+          d="M3708 529h19"/>
+
+</svg>

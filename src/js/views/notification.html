@@ -1,0 +1,60 @@
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <div class="oj-flex-bar-start">
+                <oj-button id='navDrawerBtn' on-oj-action='[[toggleDrawer]]' chroming='borderless' display='icons'>
+                    <span slot='startIcon' class='oj-ux-ico-menu'></span>
+                    Navigation Drawer
+                </oj-button>
+            </div>
+        </header>
+    </div>
+    <div role="main" class="oj-hybrid-applayout-content">
+        <div id="acc-data" style=" padding: 75px 0;">
+            <div class="section-heading">
+                <h2 class="title">Notification Detail</h2>
+            </div>
+        <hr>
+        <div id="trns-dat" data-bind="with:transaction">
+            <oj-form-layout id="ntf-dtl-frm" direction="row" max-columns="1" colspan-wrap="wrap" >
+                <oj-label for="ntf-stm-id">System ID</oj-label>
+                <oj-input-text id="ntf-stm-id" value="[[system_id]]" disabled="true"></oj-input-text>
+                <oj-label for="ntf-rls">Release</oj-label>
+                <oj-input-text id="ntf-rls" value="[[release]]" disabled="true"></oj-input-text>
+                <oj-label for="ntf-typ">Type</oj-label>
+                <oj-input-text id="ntf-typ" value="[[type]]" disabled="true"></oj-input-text>
+                <oj-label for="ntf-sts">Status</oj-label>
+                <oj-input-text id="ntf-sts" value="[[status]]" disabled="true"></oj-input-text>
+                <oj-label for="ntf-ccy">Ccy</oj-label>
+                <oj-input-text id="ntf-ccy" value="[[ccy]]" disabled="true"></oj-input-text>
+                <oj-label for="ntf-amnt">Amount</oj-label>
+                <oj-input-text id="ntf-amnt" value="[[ammount]]" disabled="true"></oj-input-text>
+            </oj-form-layout>
+        </div>
+            <oj-collapsible>
+                <h2 class="title" slot="header">Users</h2>
+                <hr>
+                <oj-list-view id='usr-lst' data='[[users]]'>
+                    <template slot="itemTemplate" data-oj-as="item">
+                        <li>
+                            <oj-list-item-layout>
+                                <div class="oj-flex">
+                                    <oj-label for="usr-lst-fl-nam" style="width:25%">Full Name:</oj-label>
+                                    <oj-input-text id="usr-lst-fl-nam" style="width:75%" value=" [[item.data.full_name]]" readonly></oj-input-text>
+                                </div>
+                                <div class="oj-flex">
+                                    <oj-label for="usr-lst-dat-tim" style="width:25%">Date&Time:</oj-label>
+                                    <oj-input-text id="usr-lst-dat-tim" style="width:75%" value=" [[item.data.date_and_time]]" readonly></oj-input-text>
+                                </div>
+                                <div class="oj-flex">
+                                    <oj-label for="usr-lst-dsc" style="width:25%">Description:</oj-label>
+                                    <oj-input-text id="usr-lst-dsc" style="width:75%" value=" [[item.data.description]]" readonly></oj-input-text>
+                                </div>
+                            </oj-list-item-layout>
+                        </li>
+                    </template>
+                </oj-list-view>
+            </oj-collapsible>
+        </div>
+    </div>
+</div>

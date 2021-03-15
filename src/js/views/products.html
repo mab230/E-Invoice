@@ -1,0 +1,73 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top">
+    <header role="banner" >
+      <oj-module class="oj-hybrid-applayout-header" config="[[headerConfig]]"></oj-module>
+    </header>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="container">
+  <div class="shopping-cart" style="display: none;">
+    <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">$270</span>
+      </div>
+    </div> <!--end shopping-cart-header -->
+
+    <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg" style="width: 120px;" alt="item1" />
+        <span class="item-name" style="color: black;">SUPERSTAR SHOES</span>
+        <span class="item-price">$85</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/2a4d6189e3a64c6e9fd5a80801532571_9366/Adilette_Comfort_Slides_Black_S82137_01_standard.jpg" style="width: 120px;" alt="item1" />
+        <span class="item-name" style="color: black;">COMFORT SLIDES</span>
+        <span class="item-price">$35</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/74d0ccea82d44cb3b60fabc9013e15db_9366/ZX_2K_Boost_Shoes_Blue_FX8836_01_standard.jpg" style="width: 120px;" alt="item1" />
+        <span class="item-name" style="color: black;">2K BOOST SHOES</span>
+        <span class="item-price">$150</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+    </ul>
+
+    <a on-click="[[goToCheckout]]" class="button">Checkout</a>
+  </div> <!--end shopping-cart -->
+</div> <!--end container -->
+<br>
+<div role="main" class="oj-hybrid-applayout-content" style="display: table;margin: 0 auto;">
+          <oj-list-view id="listview" aria-label="simple list" data="[[dataProvider]]">
+              <template slot="itemTemplate" data-oj-as="item">
+                  <li>
+                      <oj-list-item-layout>
+                          <span class="oj-typography-body-md oj-text-color-primary"><oj-bind-text value="[[item.data.name]]"></oj-bind-text></span>
+                           <br>
+                          <oj-avatar slot="leading" size="xl" src="[[item.data.image]]" style="margin-right:10px!important"></oj-avatar>
+                          <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.title]]"></oj-bind-text></span>
+                      </oj-list-item-layout>
+                  </li>
+              </template>
+          </oj-list-view>
+    </div>
+    
+  </div>

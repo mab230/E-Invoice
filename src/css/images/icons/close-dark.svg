@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+     viewBox="0 0 24 24">
+    <defs>
+        <path id="a"
+              d="M1219.4 1215.8l1.4-1.4 9.2 9.19 9.2-9.2 1.4 1.42-9.19 9.19 9.2 9.2-1.42 1.4-9.19-9.19-9.2 9.2-1.4-1.42 9.19-9.19z"/>
+        <clipPath id="b">
+            <use fill="#0048bb" xlink:href="#a"/>
+        </clipPath>
+    </defs>
+    <desc>Generated with Avocode.</desc>
+    <g transform="translate(-1218 -1213)">
+        <use fill="#0048bb" fill-opacity="1" stroke="#0048bb" opacity="1" stroke-miterlimit="50" stroke-width="2"
+             clip-path="url(&quot;#b&quot;)" xlink:href="#a"/>
+    </g>
+</svg>

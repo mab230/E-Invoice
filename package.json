@@ -1,0 +1,16 @@
+{
+  "name": "SbStarterApp",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "~9.2.0",
+    "ios-deploy": "^1.11.3"
+  },
+  "devDependencies": {
+    "@oracle/oraclejet-tooling": "~9.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

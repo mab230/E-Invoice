@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="46px" height="26.25px" viewBox="0 0 46 26.25" enable-background="new 0 0 46 26.25" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M29.92,3.02c0,1.66-3.109,3.01-6.95,3.01s-6.95-1.35-6.95-3.01c0-1.67,3.11-3.02,6.95-3.02
+			S29.92,1.35,29.92,3.02z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M29.92,3.02
+		c0,1.66-3.109,3.01-6.95,3.01s-6.95-1.35-6.95-3.01c0-1.67,3.11-3.02,6.95-3.02S29.92,1.35,29.92,3.02z"/>
+</g>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M16.02,3.02v3.01c0,1.66,3.11,3.01,6.95,3.01s6.95-1.35,6.95-3.01
+	V3.02"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M16.02,6.03v4.02c0,1.66,3.11,3.01,6.95,3.01s6.95-1.35,6.95-3.01
+	V6.03"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M16.02,10.05v4.021c0,1.66,3.11,3.01,6.95,3.01s6.95-1.35,6.95-3.01
+	V10.05"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M16.02,14.07v4.02c0,1.66,3.11,3.01,6.95,3.01s6.95-1.35,6.95-3.01
+	v-4.02"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M16.02,18.09v4.02c0,1.66,3.11,3.011,6.95,3.011
+	s6.95-1.351,6.95-3.011v-4.02"/>
+<g>
+	<defs>
+		<path id="SVGID_3_" d="M15.03,8.04c0,1.66-3.12,3.01-6.96,3.01c-3.84,0-6.95-1.35-6.95-3.01c0-1.66,3.11-3.01,6.95-3.01
+			C11.91,5.03,15.03,6.38,15.03,8.04z"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M15.03,8.04
+		c0,1.66-3.12,3.01-6.96,3.01c-3.84,0-6.95-1.35-6.95-3.01c0-1.66,3.11-3.01,6.95-3.01C11.91,5.03,15.03,6.38,15.03,8.04z"/>
+</g>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M1.12,8.04v3.01c0,1.67,3.11,3.021,6.95,3.021
+	c3.84,0,6.96-1.351,6.96-3.021V8.04"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M1.12,11.05v4.03c0,1.66,3.11,3.01,6.95,3.01
+	c3.84,0,6.96-1.35,6.96-3.01v-4.03"/>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M1.12,15.08v4.01c0,1.67,3.11,3.02,6.95,3.02
+	c3.84,0,6.96-1.35,6.96-3.02v-4.01"/>
+<g>
+	<defs>
+		<path id="SVGID_5_" d="M44.82,15.08c0,1.66-3.11,3.01-6.95,3.01c-3.841,0-6.95-1.35-6.95-3.01c0-1.67,3.109-3.02,6.95-3.02
+			C41.71,12.06,44.82,13.41,44.82,15.08z"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M44.82,15.08
+		c0,1.66-3.11,3.01-6.95,3.01c-3.841,0-6.95-1.35-6.95-3.01c0-1.67,3.109-3.02,6.95-3.02C41.71,12.06,44.82,13.41,44.82,15.08z"/>
+</g>
+<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M30.92,15.08v3.01c0,1.66,3.109,3.01,6.95,3.01
+	c3.84,0,6.95-1.35,6.95-3.01v-3.01"/>
+</svg>

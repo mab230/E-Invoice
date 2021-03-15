@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="34px" height="34px" viewBox="-0.17 -0.17 34 34" enable-background="new -0.17 -0.17 34 34" xml:space="preserve">
+<g opacity="0.85">
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M31.624,28.72c3.049-4.665,1.738-10.917-2.927-13.966c-1.637-1.07-3.549-1.641-5.504-1.645
+				c-5.564,0.018-10.066,4.536-10.061,10.101c0,5.59,4.501,10.12,10.051,10.12c2.021,0,3.9-0.6,5.471-1.63l4.59,1.63L31.624,28.72z"
+				/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M31.624,28.72
+			c3.049-4.665,1.738-10.917-2.927-13.966c-1.637-1.07-3.549-1.641-5.504-1.645c-5.564,0.018-10.066,4.536-10.061,10.101
+			c0,5.59,4.501,10.12,10.051,10.12c2.021,0,3.9-0.6,5.471-1.63l4.59,1.63L31.624,28.72z"/>
+	</g>
+	<path fill="none" stroke="#99B6E4" stroke-miterlimit="50" d="M10.482,20.561c-2.02,0-3.899-0.601-5.469-1.641l-4.591,1.65
+		l1.62-4.62c-3.055-4.661-1.752-10.916,2.91-13.97c1.643-1.077,3.564-1.65,5.529-1.65c5.561,0,10.072,4.529,10.072,10.109
+		 M21.594,24.279h3.18 M23.184,19.49l-2.64,7.449 M23.184,19.49l2.65,7.449 M11.014,14.27l2.119,0.431"/>
+	<g>
+		<defs>
+			<path id="SVGID_3_" d="M13.652,10.439c0,2.09-1.42,3.78-3.17,3.78s-3.18-1.7-3.18-3.78s1.43-3.77,3.18-3.77
+				S13.652,8.359,13.652,10.439z"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<path clip-path="url(#SVGID_4_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M13.652,10.439
+			c0,2.09-1.42,3.78-3.17,3.78s-3.18-1.7-3.18-3.78s1.43-3.77,3.18-3.77S13.652,8.359,13.652,10.439z"/>
+	</g>
+</g>
+</svg>

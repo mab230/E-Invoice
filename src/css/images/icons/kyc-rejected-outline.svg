@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30"
+     viewBox="0 0 15 15">
+    <defs>
+        <path id="ed3ga" d="M3355.5 771a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15z"/>
+        <path id="ed3gb"
+              d="M3352.5 775.8l.3-.3 2.7 2.7 2.7-2.7.3.3-2.7 2.7 2.7 2.7-.3.3-2.7-2.7-2.7 2.7-.3-.3 2.7-2.7z"/>
+        <clipPath id="ed3gc">
+            <use fill="#fff" xlink:href="#ed3ga"/>
+        </clipPath>
+        <clipPath id="ed3gd">
+            <use fill="#fff" xlink:href="#ed3gb"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g transform="translate(-3348 -771)">
+            <g>
+                <use fill="#fd6969" fill-opacity="0" xlink:href="#ed3ga"/>
+                <use fill="#fff" fill-opacity="0" stroke="#fd6969" stroke-miterlimit="50" stroke-width="1"
+                     clip-path="url(&quot;#ed3gc&quot;)" xlink:href="#ed3ga"/>
+            </g>
+            <g>
+                <use fill="#fff" fill-opacity="0" stroke="#fd6969" stroke-miterlimit="50" stroke-width="1"
+                     clip-path="url(&quot;#ed3gd&quot;)" xlink:href="#ed3gb"/>
+            </g>
+        </g>
+    </g>
+</svg>

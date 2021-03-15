@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="27px" height="30px" viewBox="0 0 27 30" enable-background="new 0 0 27 30" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M13.56,0c4,0,7.24,3.22,7.24,7.2s-3.239,7.2-7.24,7.2c-4,0-7.24-3.22-7.24-7.2S9.56,0,13.56,0z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M13.56,0
+		c4,0,7.24,3.22,7.24,7.2s-3.239,7.2-7.24,7.2c-4,0-7.24-3.22-7.24-7.2S9.56,0,13.56,0z"/>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_3_" points="17,17.312 15,22 12,22 10,17.312 		"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M17,17.312L15,22h-3
+		l-2-4.688H17z"/>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_5_" points="10,30 12,21 15,21 17,30 		"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_6_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M10,30l2-9h3l2,9H10z"
+		/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_7_" d="M0.99,24.95c4.753,4.583,11.625,6.212,17.93,4.25c2.689-0.83,5.1-2.26,7.09-4.14
+			c-0.229-0.461,0.301,0.76-0.619-1.041c-2.271-4.441-6.843-7.231-11.831-7.22c-4.972-0.005-9.532,2.766-11.82,7.181
+			C1.64,24.43,1.38,24.55,0.99,24.95L0.99,24.95z"/>
+	</defs>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_8_)" fill="none" stroke="#99B6E4" stroke-width="2" stroke-miterlimit="50" d="M0.99,24.95
+		c4.753,4.583,11.625,6.212,17.93,4.25c2.689-0.83,5.1-2.26,7.09-4.14c-0.229-0.461,0.301,0.76-0.619-1.041
+		c-2.271-4.441-6.843-7.231-11.831-7.22c-4.972-0.005-9.532,2.766-11.82,7.181C1.64,24.43,1.38,24.55,0.99,24.95L0.99,24.95z"/>
+</g>
+</svg>

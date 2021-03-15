@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="37"
+     viewBox="0 0 29 37">
+    <path fill="#99b6e4" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"
+          transform="translate(-216 -8154)"
+          d="M217 8157c0-1.1.9-2 2-2h23a2 2 0 0 1 2 2v31a2 2 0 0 1-2 2h-23a2 2 0 0 1-2-2z"/>
+
+    <path d="M230.5 8158a9.5 9.5 0 1 1 0 19 9.5 9.5 0 0 1 0-19z" transform="translate(-216 -8154)" fill="#99b6e4"
+          fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M231 8159v19" transform="translate(-216 -8155)" fill="#99b6e4" fill-opacity="0" stroke="#99b6e4"
+          stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M229 8158.2s-2 4.26-2 9.92c0 4.24 2 8.48 2 8.48" transform="translate(-216 -8154)" fill="#99b6e4"
+          fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M233 8158.6s2 4.26 2 9.32c0 4.24-2 8.48-2 8.48" transform="translate(-216 -8154)" fill="#99b6e4"
+          fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M221 8167h19" transform="translate(-216 -8153.5)" fill="#99b6e4" fill-opacity="0" stroke="#99b6e4"
+          stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M223 8162s3.25 1 7.5 1 7.5-1 7.5-1" transform="translate(-216 -8154)" fill="#99b6e4" fill-opacity="0"
+          stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M223 8173s3.25-1 7.5-1 7.5 1 7.5 1" transform="translate(-216 -8154)" fill="#99b6e4" fill-opacity="0"
+          stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M222 8181h17" transform="translate(-216 -8154)" fill="#99b6e4" fill-opacity="0" stroke="#99b6e4"
+          stroke-miterlimit="50" stroke-width="1"/>
+
+    <path d="M222 8185h17" transform="translate(-216 -8154)" fill="#99b6e4" fill-opacity="0" stroke="#99b6e4"
+          stroke-miterlimit="50" stroke-width="1"/>
+</svg>

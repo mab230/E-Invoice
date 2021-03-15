@@ -1,0 +1,41 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+
+<div class="oj-hybrid-applayout-page">
+  <div class="demo-signin-bg">
+    <div class="oj-flex oj-sm-flex-direction-column oj-sm-align-items-center">
+      <div class="oj-flex oj-flex-item oj-sm-flex-direction-column oj-bg-neutral-10 oj-panel 
+        oj-sm-padding-12x-horizontal oj-sm-margin-2x-top 
+        oj-typography-body-2xs oj-sm-justify-content-center demo-siginin-panel signin-container">
+        <div class="oj-flex oj-sm-flex-direction-column signin-fields">
+          <div id="signIn-div">
+            <div class="singInLogo">
+              <img src="img/windis-logo.png" alt="">
+            </div>
+            <div class="oj-flex">
+              <oj-validation-group id="signInFormGroup" valid="{{signInGroupValid}}">
+                <oj-input-text class="oj-sm-padding-2x-bottom" label-hint="User Name" label-edge="inside" required
+                  value="{{username}}"></oj-input-text>
+                <oj-input-password class="oj-sm-padding-2x-bottom" label-hint="Password" label-edge="inside" required
+                  value="{{password}}"></oj-input-password>
+              </oj-validation-group>
+            </div>
+            <div id="invalidUserMessageId" class="invalidUserMessage">
+              <p>Please enter a valid user name and password</p>
+            </div>
+            <oj-button id='signInBtn' class='oj-flex-item oj-sm-margin-4x-top oj-button-sm' chroming='callToAction'
+              on-oj-action='[[signIn]]'><span class='oj-hybrid-padding-horizontal'>Sign In</span></oj-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

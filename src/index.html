@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html id="htmldoc" lang="en-us">
+
+<head>
+  <title>Wind-IS</title>
+  <link rel="icon" sizes="212x212" href="img/FIF_launcher2_icon.png">
+
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-title" content="Wind-IS">
+  <link rel="apple-touch-icon" sizes="212x212" href="img/FIF_launcher2_icon_rect.png">
+  <link rel="apple-touch-startup-image" href="img/screen.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- for Chrome on Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/redwood/9.2.0/web/oj-redwood.css" id="cssvars" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet" type="text/css">
+  <!--    <link rel="stylesheet" href="css/fif-redwood.css" id="fif-redwood-css" />-->
+  <!--    <link rel="stylesheet" href="css/fif-redwood-patch.css" id="fif-redwood-patch-css" />-->
+  <link href="https://static.oracle.com/cdn/fnd/gallery/2007.1.0/images/iconfont/ojuxIconFont.min.css" rel="stylesheet"
+    type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/custom.css" id="custom-css" /> -->
+
+  <!-- <script src="css/jquery-3.4.1.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+  <!-- <script src="css/owl.carousel.min.js"></script> -->
+  <!-- Bootstrap-->
+  <!-- <script src="css/popper.min.js"></script> -->
+  <!-- <script src="css/bootstrap.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="css/custom2.css" id="custom-css" /> -->
+  <!-- <script src="css/base.js"></script> -->
+  <script data-main="js/main" src="js/libs/require/require.js"></script>
+  <link rel="stylesheet" href="css/calendar.css" id="custom-css">
+  <script src="css/calendar.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="page" class="oj-offcanvas-outer-wrapper oj-offcanvas-page demo-offcanvas-outer-wrapper">
+    <!-- nav drawer -->
+    <div id="navDrawer" role="navigation" style="height: 100vh;position: fixed;"
+      class="demo-navdrawer oj-hybrid-applayout-offcanvas oj-offcanvas-start oj-contrast-marker">
+      <!-- User Profile -->
+      <div class="demo-navdrawer-content-wrapper oj-flex oj-sm-flex-direction-column oj-sm-flex-wrap-nowrap">
+        <div class="demo-navdrawer-content oj-sm-padding-0">
+          <div class="oj-flex oj-sm-flex-direction-column oj-sm-align-items-center oj-sm-padding-8x-vertical"
+            data-bind="with: userProfileModel">
+            <oj-avatar class="oj-flex-item" id="profile-photo" src='[[photo]]' role='img' size='xl'
+              aria-label="Profile Photo">
+            </oj-avatar>
+            <h2 class="oj-flex-item demo-profile-name">
+              <span>
+                <oj-bind-text value="[[firstName() + ' ' + lastName()]]"></oj-bind-text>
+              </span>
+            </h2>
+          </div>
+
+          <!-- Navigation -->
+          <oj-navigation-list id='appNavList' class='oj-navigationlist-stack-icon-label'
+            on-selection-changed='[[closeDrawer]]' on-oj-before-select='[[beforeCloseDrawer]]'
+            selection='{{router.stateId}}' aria-label="App Navigation List">
+            <ul>
+
+              <li id="customers">
+                <a href="#">
+                  <!-- <span class="oj-ux-ico-contact-group oj-ux-icon-size-6x"></span>
+                Customers
+                 -->
+                  <div class="oj-flex oj-sm-flex-items-initial">
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span class="oj-ux-ico-contact-group oj-ux-icon-size-6x" role="img" aria-label="customers">
+                      </span>
+                    </div>
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span>Customers</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li id="profile">
+                <a href="#">
+                  <!-- <span class="oj-ux-ico-contact oj-ux-icon-size-6x"></span>
+                Profile -->
+                  <div class="oj-flex oj-sm-flex-items-initial">
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span class="oj-ux-ico-contact oj-ux-icon-size-6x" role="img" aria-label="profile">
+                      </span>
+                    </div>
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span>Profile</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li id="about">
+                <a href="#">
+                  <!-- <span class="oj-ux-ico-information oj-ux-icon-size-6x"></span>
+                About -->
+                  <div class="oj-flex oj-sm-flex-items-initial">
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span class="oj-ux-ico-information oj-ux-icon-size-6x" role="img" aria-label="about">
+                      </span>
+                    </div>
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span>About</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li id="signout" style="margin-top: 25px">
+                <a href="#">
+                  <!-- <span class="oj-ux-ico-logout oj-ux-icon-size-6x"></span>
+                Sign Out -->
+                  <div class="oj-flex oj-sm-flex-items-initial">
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span class="oj-ux-ico-logout oj-ux-icon-size-6x" role="img" aria-label="sign out">
+                      </span>
+                    </div>
+                    <div class="oj-flex-item oj-sm-padding-2x-horizontal">
+                      <span>Sign Out</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </oj-navigation-list>
+        </div>
+        <!-- Footer -->
+        <footer class="oj-sm-margin-2x demo-flex-zero demo-navdrawer-footer">
+          <!--            <div class="demo-ifixitfast-icon"></div>-->
+        </footer>
+      </div>
+    </div>
+    <oj-bind-if test="[[isAuthenticated]]">
+      <div class="oj-applayout-fixed-bottom">
+        <div id="navbar" role="navigation" class="oj-hybrid-applayout-navbar-app">
+          <oj-navigation-list class="oj-navigationlist-stack-icon-label" data="[[navDataSource]]" edge="top"
+            on-current-item-changed="[[navBarChange]]" selection="{{router.stateId}}">
+            <template slot="itemTemplate" data-oj-as="item">
+              <a href="#">
+                <div style="text-align: center;font-size: 25px;margin-bottom: 5px!important;margin-top: 5px!important;">
+                  <i :class="[[item.data.iconClass]]"></i>
+                </div>
+                <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
+              </a>
+            </template>
+          </oj-navigation-list>
+        </div>
+      </div>
+    </oj-bind-if>
+    <!-- App level messages-->
+    <oj-messages id="appMsgs" display="notification" messages="[[appMessages]]" position="[[appMsgPos]]"
+      on-oj-close="[[appMessageClosed]]">
+    </oj-messages>
+
+    <!-- page -->
+    <div id="pageContent">
+      <oj-module config="[[moduleConfig]]" animation="[[moduleAnimation]]"
+        on-oj-transition-start="[[moduleTransitionStarted]]" on-oj-transition-end="[[moduleTransitionEnded]]"
+        style="min-height: 100vh;" :style.display="[[pageContentModuleDisplay]]"></oj-module>
+    </div>
+
+    <!-- bottom drawer: camera action sheet for hybrid app -->
+    <div id="bottomDrawer" class="demo-bottom-offcanvas oj-offcanvas-bottom">
+      <oj-list-view class="demo-camera-capture-list" selection-mode="none">
+        <ul>
+          <li id="takePhoto" on-click="[[function() { return updateProfilePhoto(1); }]]">
+            <a href="#">Take a photo</a>
+          </li>
+          <li id="choosePhoto" on-click="[[function() { return updateProfilePhoto(0); }]]">
+            <a href="#">Choose a Photo</a>
+          </li>
+          <li id="cancel" on-click="[[closeBottomDrawer]]">
+            <a href="#">Cancel</a>
+          </li>
+        </ul>
+      </oj-list-view>
+    </div>
+
+    <div id="connectionDrawer" class="demo-connection-drawer oj-bg-neutral-30 oj-offcanvas-bottom">
+      <div class="oj-flex-bar" style="height: 48px">
+        <div class="oj-flex-bar-start" style="width: 48px;">
+          <oj-bind-if test="[[connectionDrawer.isOnline()]]">
+            <img src="css/images/online_icon.png" alt="online" height="24" width="24" style="margin: auto;" />
+          </oj-bind-if>
+          <oj-bind-if test="[[!connectionDrawer.isOnline()]]">
+            <img src="css/images/offline_icon.png" alt="online" height="24" width="24" style="margin: auto;" />
+          </oj-bind-if>
+
+        </div>
+        <div class="oj-flex-bar-middle oj-sm-padding-2x-horizontal" style="line-height: 48px;">
+          <span>
+            <oj-bind-text value="[[connectionDrawer.message]]"></oj-bind-text>
+          </span>
+        </div>
+        <div class="oj-flex-bar-end oj-flex oj-sm-align-items-center">
+          <oj-button on-click="[[connectionDrawer.closeDrawer]]" display='icons' chroming='borderless'>
+            <span slot='startIcon' class='oj-ux-ico-close'></span>
+            Close
+          </oj-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function scrollToDiv(divName) {
+      $('html,body').animate({
+        scrollTop: $("." + divName).offset().top - 70
+      },
+        'slow');
+    }
+  </script>
+
+</body>
+
+</html>

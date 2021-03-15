@@ -1,0 +1,29 @@
+<svg id="Icon_Activity_feed_" data-name="Icon Activity feed " xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #99b6e4;
+        stroke-width: 1px;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M662,459h8v-6h-8l-3.024,2.653a0.625,0.625,0,0,0,0,1.056Z" transform="translate(-651.5 -451.5)"/>
+  <path id="Shape_7_copy_2" data-name="Shape 7 copy 2" class="cls-1" d="M662,475h11v-6H662l-3.024,2.653a0.625,0.625,0,0,0,0,1.056Z" transform="translate(-651.5 -451.5)"/>
+  <path id="Shape_7_copy" data-name="Shape 7 copy" class="cls-1" d="M662,467h15v-6H662l-3.024,2.653a0.625,0.625,0,0,0,0,1.056Z" transform="translate(-651.5 -451.5)"/>
+  <g id="line">
+    <path class="cls-1" d="M655,475v2" transform="translate(-651.5 -451.5)"/>
+    <path id="Shape_5523_copy" data-name="Shape 5523 copy" class="cls-1" d="M655,452v2" transform="translate(-651.5 -451.5)"/>
+    <path id="Shape_5523_copy_2" data-name="Shape 5523 copy 2" class="cls-1" d="M655,467v3" transform="translate(-651.5 -451.5)"/>
+    <path id="Shape_5523_copy_3" data-name="Shape 5523 copy 3" class="cls-1" d="M655,459v3" transform="translate(-651.5 -451.5)"/>
+  </g>
+  <g id="elipse">
+    <circle id="Ellipse_1954_copy_2" data-name="Ellipse 1954 copy 2" class="cls-2" cx="3" cy="5" r="2.5"/>
+    <circle id="Ellipse_1954_copy_3" data-name="Ellipse 1954 copy 3" class="cls-2" cx="3" cy="13" r="2.5"/>
+    <circle id="Ellipse_1954_copy_4" data-name="Ellipse 1954 copy 4" class="cls-2" cx="3" cy="21" r="2.5"/>
+  </g>
+</svg>

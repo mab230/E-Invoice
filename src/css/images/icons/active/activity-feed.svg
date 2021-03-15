@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27"
+     viewBox="0 0 27 27">
+    <defs>
+        <path id="a" d="M662 459h8v-6h-8l-3.02 2.65a.62.62 0 0 0 0 1.06z"/>
+        <path id="b" d="M662 475h11v-6h-11l-3.02 2.65a.62.62 0 0 0 0 1.06z"/>
+        <path id="c" d="M662 467h15v-6h-15l-3.02 2.65a.62.62 0 0 0 0 1.06z"/>
+        <path id="d" d="M655 475v2"/>
+        <path id="e" d="M655 452v2"/>
+        <path id="f" d="M655 467v3"/>
+        <path id="g" d="M655 459v3"/>
+        <path id="h" d="M654.5 454a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+        <path id="i" d="M654.5 462a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+        <path id="j" d="M654.5 470a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+        <clipPath id="k">
+            <use fill="#fff" xlink:href="#a"/>
+        </clipPath>
+        <clipPath id="l">
+            <use fill="#fff" xlink:href="#b"/>
+        </clipPath>
+        <clipPath id="m">
+            <use fill="#fff" xlink:href="#c"/>
+        </clipPath>
+        <clipPath id="n">
+            <use fill="#fff" xlink:href="#d"/>
+        </clipPath>
+        <clipPath id="o">
+            <use fill="#fff" xlink:href="#e"/>
+        </clipPath>
+        <clipPath id="p">
+            <use fill="#fff" xlink:href="#f"/>
+        </clipPath>
+        <clipPath id="q">
+            <use fill="#fff" xlink:href="#g"/>
+        </clipPath>
+        <clipPath id="r">
+            <use fill="#fff" xlink:href="#h"/>
+        </clipPath>
+        <clipPath id="s">
+            <use fill="#fff" xlink:href="#i"/>
+        </clipPath>
+        <clipPath id="t">
+            <use fill="#fff" xlink:href="#j"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#k&quot;)" xlink:href="#a"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#l&quot;)" xlink:href="#b"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#m&quot;)" xlink:href="#c"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#n&quot;)" xlink:href="#d"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#o&quot;)" xlink:href="#e"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#p&quot;)" xlink:href="#f"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#q&quot;)" xlink:href="#g"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#r&quot;)" xlink:href="#h"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#s&quot;)" xlink:href="#i"/>
+    </g>
+    <g transform="translate(-651 -451)">
+        <use fill="#fff" fill-opacity="0" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="1.5"
+             clip-path="url(&quot;#t&quot;)" xlink:href="#j"/>
+    </g>
+</svg>

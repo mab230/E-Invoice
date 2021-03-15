@@ -1,0 +1,25 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top demo-transparent-top">
+    <header role="banner" class="demo-transparent-header oj-flex-bar oj-hybrid-applayout-header oj-sm-align-items-center">
+      <div class="oj-flex-bar-end">
+        <oj-button id='skipTourBtn' on-oj-action='[[goToSignIn]]' chroming='borderless'>
+          <label>
+            <oj-bind-text value="[[skipOrSignIn]]"></oj-bind-text>
+          </label>
+        </oj-button>
+      </div>
+    </header>
+  </div>
+
+  <oj-module config="[[moduleConfig]]" animation="[[moduleAnimation]]" on-oj-view-disconnected="[[viewDisconnected]]"></oj-module>
+</div>

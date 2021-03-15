@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30"
+     viewBox="0 0 15 15">
+    <defs>
+        <path id="wkqea" d="M3388.5 771a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15z"/>
+        <path id="wkqec" d="M3392 776l-4.23 4.9a.29.29 0 0 1-.45 0l-2.32-2.69"/>
+        <clipPath id="wkqeb">
+            <use fill="#fff" xlink:href="#wkqea"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g transform="translate(-3381 -771)">
+            <g>
+                <use fill="#8dcc4e" fill-opacity="0.3" xlink:href="#wkqea"/>
+                <use fill="#fff" fill-opacity="0" stroke="#8dcc4e" stroke-miterlimit="50" stroke-width="1"
+                     clip-path="url(&quot;#wkqeb&quot;)" xlink:href="#wkqea"/>
+            </g>
+            <g>
+                <use fill="#fff" fill-opacity="0" stroke="#8dcc4e" stroke-miterlimit="50" stroke-width="1" xlink:href="#wkqec"/>
+            </g>
+        </g>
+    </g>
+</svg>

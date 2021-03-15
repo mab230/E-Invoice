@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M2720 532a16 16 0 1 1 0 32 16 16 0 0 1 0-32z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff" d="M2721 543v-1h6v6h-1v-4.3l-5.62 5.63-.71-.7 5.62-5.63zm5 0h-.05l.05.05z"/>
+        </clipPath>
+    </defs>
+    <path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+          d="M2720 532a16 16 0 1 1 0 32 16 16 0 0 1 0-32z" clip-path="url(&quot;#a&quot;)"
+          transform="translate(-2704 -532)"/>
+    <path fill="none" stroke="#fff" stroke-miterlimit="50"
+          d="M23 17.96V21a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2.98"/>
+    <path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+          d="M2721 543v-1h6v6h-1v-4.3l-5.62 5.63-.71-.7 5.62-5.63zm5 0h-.05l.05.05z" clip-path="url(&quot;#b&quot;)"
+          transform="translate(-2704 -532)"/>
+</svg>

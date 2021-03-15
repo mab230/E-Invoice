@@ -1,0 +1,74 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <div class="oj-flex-bar-start">
+                <oj-button id='navDrawerBtn' chroming='borderless' display='icons' on-oj-action="[[navBack]]">
+                    <span slot='startIcon' class='oj-ux-ico-arrow-left oj-ux-icon-size-6x'></span>
+                </oj-button>
+            </div>
+            <div class="oj-hybrid-applayout-bar-title">
+                <h1 class="oj-hybrid-applayout-header-title">Vats</h1>
+            </div>
+            <div class="toolbarSpacer"></div>
+            <div class="invStatus">
+                <oj-bind-text value="[[vatType]]"></oj-bind-text>
+            </div>
+        </header>
+    </div>
+    <div role="main" class="oj-hybrid-applayout-content" >
+        <div style="height: 57px;"></div>
+        <oj-list-view id="invListId" aria-label="list to show selection features" data="[[invVatsList]]"
+            selection-mode="single" selection-required="true" style="overflow-x: hidden;">
+            <template slot="itemTemplate" data-oj-as="item">
+                <li>
+                    <oj-list-item-layout>
+                        <div class="oj-flex">
+                            <div class="oj-flex oj-flex-item oj-sm-6">
+                                <div class="oj-flex-item oj-sm-12">
+                                    <span style="font-size: 14px;">
+                                        <oj-bind-text value="[['Customer ']]"></oj-bind-text>
+                                    </span>
+                                    <span style="font-weight: bold;">
+                                        <oj-bind-text value="[[item.data.customer_name]]"></oj-bind-text>
+                                    </span>
+                                </div>
+                                <span class="oj-flex-item" style="font-size: 12px;color: #706a6a;font-weight: 400;">
+                                    <oj-bind-text value="[[item.data.internal_code]]"></oj-bind-text>
+                                </span>
+                            </div>
+                            <div class="oj-flex oj-flex-item oj-sm-6">
+                                <div class="oj-flex oj-flex-item oj-sm-12" style="align-items: center;display: flex;">
+                                    <span class="oj-flex-item oj-sm-6" style="font-size: 14px;">
+                                        <oj-bind-text value="[['Total Amount']]"></oj-bind-text>
+                                    </span>
+                                    <span style="font-weight: 500;">
+                                        <oj-bind-text value="[[item.data.total_val +' $']]"></oj-bind-text>
+                                    </span>
+                                </div>
+                                <div class="oj-flex oj-flex-item oj-sm-12" style="align-items: center;display: flex;">
+                                    <span class="oj-flex-item oj-sm-6" style="font-size: 14px;">
+                                        <oj-bind-text value="[['Total Vat']]"></oj-bind-text>
+                                    </span>
+                                    <span style="font-weight: 500;">
+                                        <oj-bind-text value="[[item.data.total_vat +' $']]"></oj-bind-text>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </oj-list-item-layout>
+                </li>
+            </template>
+        </oj-list-view>
+    </div>
+
+</div>

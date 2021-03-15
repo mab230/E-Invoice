@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="26" viewBox="0 0 35 26">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.7;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="ID_icon_white" data-name="ID icon white" class="cls-1">
+    <rect id="Rounded_Rectangle_3043_copy" data-name="Rounded Rectangle 3043 copy" class="cls-2" width="35" height="26" rx="3" ry="3"/>
+    <rect id="Rounded_Rectangle_3043_copy_2" data-name="Rounded Rectangle 3043 copy 2" class="cls-2" x="3" y="10" width="11" height="12" rx="2" ry="2"/>
+    <circle class="cls-2" cx="8.5" cy="15.5" r="2.5"/>
+    <ellipse class="cls-2" cx="8.5" cy="23" rx="4.5" ry="4"/>
+    <g id="lines">
+      <rect class="cls-2" x="17" y="11" width="7" height="1"/>
+      <rect id="Rectangle_559_copy_2" data-name="Rectangle 559 copy 2" class="cls-2" x="17" y="15" width="7" height="1"/>
+      <rect id="Rectangle_559_copy_3" data-name="Rectangle 559 copy 3" class="cls-2" x="17" y="19" width="4" height="1"/>
+      <rect id="Rectangle_559_copy_4" data-name="Rectangle 559 copy 4" class="cls-2" x="23" y="19" width="4" height="1"/>
+      <rect id="Rectangle_559_copy" data-name="Rectangle 559 copy" class="cls-2" x="26" y="11" width="4" height="1"/>
+    </g>
+    <path id="Shape_3044_copy_16" data-name="Shape 3044 copy 16" class="cls-3" d="M1,6H34"/>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <div class="oj-flex-bar-start">
+                <oj-button id='navDrawerBtn' on-oj-action='[[toggleDrawer]]' chroming='borderless' display='icons'>
+                    <span slot='startIcon' class='oj-ux-ico-menu'></span>
+                    Navigation Drawer
+                </oj-button>
+            </div>
+            <!--<div class="oj-hybrid-applayout-bar-title">
+          <h1 class="oj-hybrid-applayout-header-title">Home</h1>
+        </div>-->
+        </header>
+    </div>
+    <div role="main" class="oj-hybrid-applayout-content">
+        <!-- App Capsule -->
+        <div id="appCapsule">
+            <!-- Wallet Card -->
+            <div class="section wallet-card-section pt-1">
+                <div class="wallet-card">
+                    <!-- Balance -->
+                    <div class="balance">
+                        <div class="left">
+                            <span class="title">Ahmed Sherif Mahmoud</span>
+                            <h1 class="total">WIND Information System</h1>
+                        </div>
+                    </div>
+                    <!-- * Balance -->
+                    <!-- Wallet Footer -->
+                    <div class="wallet-footer">
+                        <div class="searchHeader">
+                            <oj-validation-group id="signInFormGroup">
+                                <oj-form-layout direction="row" max-columns="2">
+                                    <oj-select-single data="[[monthsADP]]" label-hint="Month" value="{{month}}"
+                                        on-value-changed="[[monthSelectedAction]]">
+                                    </oj-select-single>
+                                    <oj-select-single data="[[yearsADP]]" label-hint="Year" value="{{year}}"
+                                        on-value-changed="[[yearSelectedAction]]">
+                                    </oj-select-single>
+                                </oj-form-layout>
+                            </oj-validation-group>
+                        </div>
+                        <div class="item">
+                            <h3>
+                                <oj-bind-text value="[['Issued Invoices']]"></oj-bind-text>
+                            </h3>
+                            <oj-chart id="pieChart" type="pie" data="[[issuedInvList]]" animation-on-display="auto"
+                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
+                                on-oj-drill="[[issuedSeriesDrillHandler]]" legend.position="bottom">
+                                <template slot='itemTemplate' data-oj-as='item'>
+                                    <oj-chart-item value='[[item.data.status_count]]'
+                                        group-id='[[ [item.data.inv_type] ]]' series-id='[[item.data.status]]'>
+                                    </oj-chart-item>
+                                </template>
+                            </oj-chart>
+                        </div>
+                        <div class="item">
+                            <h3>
+                                <oj-bind-text value="[['Recieved Invoices']]"></oj-bind-text>
+                            </h3>
+                            <oj-chart id="pieChart" type="pie" data="[[recievedInvList]]" animation-on-display="auto"
+                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
+                                on-oj-drill="[[recievedSeriesDrillHandler]]" legend.position="bottom">
+                                <template slot='itemTemplate' data-oj-as='item'>
+                                    <oj-chart-item value='[[item.data.status_count]]'
+                                        group-id='[[ [item.data.inv_type] ]]' series-id='[[item.data.status]]'>
+                                    </oj-chart-item>
+                                </template>
+                            </oj-chart>
+                        </div>
+                        <div class="item">
+                            <h3>
+                                <oj-bind-text value="[['Vats']]"></oj-bind-text>
+                            </h3>
+                            <oj-chart id="pieChart" type="pie" data="[[vatsList]]" animation-on-display="auto"
+                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
+                                on-oj-drill="[[vatsSeriesDrillHandler]]" style-defaults.pie-inner-radius="[[.5]]"
+                                pie-center.label="[[totalVatsValue]]" pie-center.label-style="[[{color:'#000'}]]"
+                                legend.position="bottom">
+                                <template slot='itemTemplate' data-oj-as='item'>
+                                    <oj-chart-item value='[[item.data.total_vat]]' group-id='[[ ["vat"] ]]'
+                                        series-id='[[item.data.vat_type]]'>
+                                    </oj-chart-item>
+                                </template>
+                            </oj-chart>
+                        </div>
+                    </div>
+                    <!-- * Wallet Footer -->
+                </div>
+            </div>
+            <!-- Wallet Card -->
+            <div style="height: 25px;"></div>
+        </div>
+        <div class="scrollOptions">
+            <i class="fas fa-angle-up" style="margin-bottom: 15px;" on-click="[[scrollDown]]"></i>
+            <i class="fas fa-angle-down" style="margin-top: 15px;" on-click="[[scrollUp]]"></i>
+        </div>
+        <!-- * App Capsule -->
+
+    </div>

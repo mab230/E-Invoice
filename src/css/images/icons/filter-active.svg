@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M2613.5 1650a15.5 15.5 0 1 1 0 31 15.5 15.5 0 0 1 0-31z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff"
+                  d="M2608.08 1660.3c-.12.19-.1.42.01.61l.02.02 3.97 5.48v6.19c0 .16.09.3.23.37.04.03.11.03.18.03.09 0 .18-.03.26-.1l3.01-1.66a.4.4 0 0 0 .15-.31v-4.52l3.97-5.48.01-.02a.58.58 0 0 0 .02-.61.63.63 0 0 0-.54-.31h-10.77a.57.57 0 0 0-.52.31z"/>
+        </clipPath>
+    </defs>
+    <path fill="#99b6e4" fill-opacity=".1" d="M15.5 0a15.5 15.5 0 1 1 0 31 15.5 15.5 0 0 1 0-31z"/>
+    <path fill="none" stroke="#99b6e4" stroke-miterlimit="50" stroke-width="2"
+          d="M2613.5 1650a15.5 15.5 0 1 1 0 31 15.5 15.5 0 0 1 0-31z" clip-path="url(&quot;#a&quot;)"
+          transform="translate(-2598 -1650)"/>
+    <path fill="none" stroke="#a6a6a6" stroke-miterlimit="50" stroke-width="2"
+          d="M2608.08 1660.3c-.12.19-.1.42.01.61l.02.02 3.97 5.48v6.19c0 .16.09.3.23.37.04.03.11.03.18.03.09 0 .18-.03.26-.1l3.01-1.66a.4.4 0 0 0 .15-.31v-4.52l3.97-5.48.01-.02a.58.58 0 0 0 .02-.61.63.63 0 0 0-.54-.31h-10.77a.57.57 0 0 0-.52.31z"
+          clip-path="url(&quot;#b&quot;)" transform="translate(-2598 -1650)"/>
+</svg>

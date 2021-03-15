@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="23"
+     viewBox="0 0 27 23">
+    <defs>
+        <path id="b" d="M3323 299.34l3.58-3.85-3.57-3.84"/>
+        <path id="d" d="M3308 301.66l-3.6 3.84 3.6 3.84"/>
+        <clipPath id="e">
+            <use fill="#fff" xlink:href="#a"/>
+        </clipPath>
+        <clipPath id="f">
+            <use fill="#fff" xlink:href="#b"/>
+        </clipPath>
+        <clipPath id="g">
+            <use fill="#fff" xlink:href="#c"/>
+        </clipPath>
+        <clipPath id="h">
+            <use fill="#fff" xlink:href="#d"/>
+        </clipPath>
+    </defs>
+    <path transform="translate(-3302 -289)" fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="1" d="M3325.5 295.5h-14.76" />
+    <g transform="translate(-3302 -289)">
+        <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+             clip-path="url(&quot;#f&quot;)" xlink:href="#b"/>
+    </g>
+    <path transform="translate(-3302 -289)" fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="1" d="M3305.3 305.5h14.75" />
+    <g transform="translate(-3302 -289)">
+        <use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+             clip-path="url(&quot;#h&quot;)" xlink:href="#d"/>
+    </g>
+</svg>

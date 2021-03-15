@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="a">
+            <path fill="#ccc" d="M2765 532a16 16 0 1 1 0 32 16 16 0 0 1 0-32z"/>
+        </clipPath>
+        <clipPath id="b">
+            <path fill="#fff"
+                  d="M2759.08 542.3c-.12.2-.1.42.01.61l.02.02 3.97 5.48v6.19c0 .16.09.3.23.37.04.03.11.03.18.03a.4.4 0 0 0 .26-.1l3.01-1.66a.4.4 0 0 0 .15-.3v-4.53l3.97-5.48.01-.02c.12-.19.13-.42.02-.61a.62.62 0 0 0-.54-.3h-10.77a.55.55 0 0 0-.52.3z"/>
+        </clipPath>
+    </defs>
+    <path fill="none" stroke="#ccc" stroke-miterlimit="50" stroke-width="2"
+          d="M2765 532a16 16 0 1 1 0 32 16 16 0 0 1 0-32z" clip-path="url(&quot;#a&quot;)"
+          transform="translate(-2749 -532)"/>
+    <path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+          d="M2759.08 542.3c-.12.2-.1.42.01.61l.02.02 3.97 5.48v6.19c0 .16.09.3.23.37.04.03.11.03.18.03a.4.4 0 0 0 .26-.1l3.01-1.66a.4.4 0 0 0 .15-.3v-4.53l3.97-5.48.01-.02c.12-.19.13-.42.02-.61a.62.62 0 0 0-.54-.3h-10.77a.55.55 0 0 0-.52.3z"
+          clip-path="url(&quot;#b&quot;)" transform="translate(-2749 -532)"/>
+</svg>

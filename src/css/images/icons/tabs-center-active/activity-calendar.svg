@@ -1,0 +1,13 @@
+<svg id="icon_Activity_calendar" data-name="icon Activity calendar" xmlns="http://www.w3.org/2000/svg" width="24.063" height="27" viewBox="0 0 24.063 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #c6c3d2;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M675,513h-2v-1a0.893,0.893,0,0,0-1-1h-2a0.882,0.882,0,0,0-1,1v1h-9v-1a2.077,2.077,0,0,0-1-1h-2c-0.237,0-1.279.73-1,1v1h-2a0.983,0.983,0,0,0-1,1v22a1.156,1.156,0,0,0,1,1h21a0.919,0.919,0,0,0,1-1V514A0.856,0.856,0,0,0,675,513Zm-5-1h2v2h-2v-2Zm-11,2h-2v-2h2m-5,2h2a2.077,2.077,0,0,0,1,1h2a2.077,2.077,0,0,0,1-1h9a0.843,0.843,0,0,0,1,1h2a0.928,0.928,0,0,0,1-1h2v4H654v-4Zm0,22V519h21v17H654Zm13-15H656v13h17V521h-6Zm-2,1h3v3h-3v-3Zm3,7h-3v-3h3v3Zm-7-3h3v3h-3v-3Zm0-4h3v3h-3v-3Zm-4,0h3v3h-3v-3Zm0,4h3v3h-3v-3Zm3,7h-3v-3h3v3Zm4,0h-3v-3h3v3Zm4,0h-3v-3h3v3Zm4,0h-3v-3h3v3Zm0-4h-3v-3h3v3Zm0-7v3h-3v-3h3Z" transform="translate(-652.5 -510.5)"/>
+</svg>

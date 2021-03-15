@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="6" viewBox="0 0 24 6">
+	<defs>
+		<clipPath id="a">
+			<path fill="#fff" d="M3406 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+		</clipPath>
+		<clipPath id="b">
+			<path fill="#fff" d="M3415 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+		</clipPath>
+		<clipPath id="c">
+			<path fill="#fff" d="M3424 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+		</clipPath>
+	</defs>
+	<path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M3406 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+		  clip-path="url(&quot;#a&quot;)" transform="translate(-3403 -252)"/>
+	<path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M3415 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+		  clip-path="url(&quot;#b&quot;)" transform="translate(-3403 -252)"/>
+	<path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M3424 252a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+		  clip-path="url(&quot;#c&quot;)" transform="translate(-3403 -252)"/>
+</svg>

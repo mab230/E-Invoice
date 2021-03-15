@@ -1,0 +1,159 @@
+[
+	{
+		"account_number":"100042074208",
+		"customer_number":"1402583502",
+		"old_account_id":"",
+		"account_type":"Current Account",
+		"account_currency":"USD",
+		"status":"Active",
+		"over_Draft_limit":"0.000",
+		"held_amount":"0.00",
+		"iban_number":"EG030010013600000100042074308",
+		"expire_renewal_date":"",
+		"online_actual_balance":"200.68",
+		"group_limit":"0",
+		"ledger_balance":"29/11/2020 200.68",
+		"limit_utilization":"0",
+		"available_balance":"29/11/2020 200.68",
+		"transactions":[
+			{
+				"transaction_id":"1",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"2",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"3",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			}
+		]
+	},{
+		"account_number":"100042074508",
+		"customer_number":"1402583502",
+		"old_account_id":"",
+		"account_type":"Current Account",
+		"account_currency":"EGP",
+		"status":"Active",
+		"over_Draft_limit":"0.000",
+		"held_amount":"0.00",
+		"iban_number":"EG030010013600000100042074308",
+		"expire_renewal_date":"",
+		"online_actual_balance":"200.68",
+		"group_limit":"0",
+		"ledger_balance":"29/11/2020 200.68",
+		"limit_utilization":"0",
+		"available_balance":"29/11/2020 200.68",
+		"transactions":[
+			{
+				"transaction_id":"4",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"5",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"6",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			}
+		]
+	},{
+		"account_number":"100042074608",
+		"customer_number":"1402583502",
+		"old_account_id":"",
+		"account_type":"Current Account",
+		"account_currency":"EGP",
+		"status":"Active",
+		"over_Draft_limit":"0.000",
+		"held_amount":"0.00",
+		"iban_number":"EG030010013600000100042074308",
+		"expire_renewal_date":"",
+		"online_actual_balance":"200.68",
+		"group_limit":"0",
+		"ledger_balance":"29/11/2020 200.68",
+		"limit_utilization":"0",
+		"available_balance":"29/11/2020 200.68",
+		"transactions":[
+			{
+				"transaction_id":"7",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"8",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			},{
+				"transaction_id":"9",
+				"posting_date":"04/11/2020",
+				"value_date":"04/11/2020",
+				"back_office_reffrence":"FT203094KKR3",
+				"description":"FT203094KKR3-FT100042074208-online-funds-I.F.O 100042074208 Wind Information System Funds B/O 100042074208 Wind Information Systems FT203094KKR3 new primes due",
+				"related_refrence":"",
+				"change_number":"FT100042074208",
+				"withdrawal":"100.00",
+				"deposit":"",
+				"balance":"200.68"
+			}
+		]
+	}
+]
