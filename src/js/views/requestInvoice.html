@@ -83,15 +83,15 @@
           <li>
             <oj-list-item-layout>
               <div class="oj-flex" style="align-items: center;">
-                <div class="oj-flex oj-flex-item oj-sm-8">
-                  <span class="oj-flex-item oj-sm-5" style="font-size: 14px;">
+                <div class="oj-flex oj-flex-item oj-sm-8" style="align-items: center;">
+                  <span class="oj-flex-item oj-sm-4" style="font-size: 14px;">
                     <oj-bind-text value="[['Name']]"></oj-bind-text>
                   </span>
                   <span style="font-weight: bold;">
                     <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
                   </span>
                 </div>
-                <div class="oj-flex oj-flex-item oj-sm-4">
+                <div class="oj-flex oj-flex-item oj-sm-4" style="justify-content: flex-end;">
                   <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
                     on-oj-action="[[onForwardContractSelect]]">
                     <span slot='startIcon' class="fas fa-chevron-circle-right"
@@ -125,14 +125,14 @@
             <oj-list-item-layout>
               <div class="oj-flex" style="align-items: center;">
                 <div class="oj-flex oj-flex-item oj-sm-8">
-                  <span class="oj-flex-item oj-sm-5" style="font-size: 14px;">
+                  <span class="oj-flex-item oj-sm-4" style="font-size: 14px;">
                     <oj-bind-text value="[['Name']]"></oj-bind-text>
                   </span>
                   <span style="font-weight: bold;">
                     <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
                   </span>
                 </div>
-                <div class="oj-flex oj-flex-item oj-sm-4" style="align-items: center;">
+                <div class="oj-flex oj-flex-item oj-sm-4" style="align-items: center;justify-content: center;">
                   <oj-checkboxset value="{{item.data.selected}}" on-value-changed="[[onMileStoneChecked]]"
                     style="padding-top: 5px;margin-left: 30px;">
                     <oj-option value="selected"></oj-option>
@@ -156,7 +156,7 @@
     <div slot="body">
       <oj-validation-group id="sendMilestoneGroup">
         <oj-form-layout max-columns="1" direction="row">
-          <oj-text-area label-hint="Justification" rows="5" required="true" value="{{milestoneJustification}}">
+          <oj-text-area label-hint="Message" rows="5" required="true" value="{{milestoneJustification}}">
           </oj-text-area>
         </oj-form-layout>
       </oj-validation-group>

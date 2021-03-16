@@ -134,7 +134,7 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
       function getVats(inv_date) {
         data.get(`https://windis.tk/ords/etax_mobile/etax/vats?inv_date=${inv_date}`).then(response => {
           if (response.items.length) {
-            self.totalVatsValue(response.items.reduce((a, b) => a + (b['total_vat'] || 0), 0) + '');
+            self.totalVatsValue('Total '+response.items.reduce((a, b) => a + (b['total_vat'] || 0), 0) + '$');
             self.vatsArr(response.items);
           } else {
             self.vatsArr([]);

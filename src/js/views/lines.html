@@ -14,88 +14,94 @@
       <oj-module class="oj-hybrid-applayout-header" config="[[headerConfig]]"></oj-module>
     </header>
   </div>
-  <div style="height: 69px;"></div>
+  <div style="height: 58px;"></div>
   <div role="main" class="oj-hybrid-applayout-content">
-    <oj-collapsible id="c1" expanded="true">
-      <h3 slot="header">Invoice</h3>
-      <div class="invHeader oj-flex" style="align-items: center;">
-        <div class="oj-flex oj-flex-item oj-sm-12">
-          <span class="oj-flex-item oj-sm-3" style="font-size: 13px;">
-            <oj-bind-text value="[['Customer']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.customer_name]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Total Sales']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.total_sales]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Total Discount']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.total_discount]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Total Items Discount']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.total_items_discount]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Value added Tax']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.value_added_tax]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Withholding Tax']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.with_holding_tax]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Extra invoice Discount']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.extra_invoice_discount]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Total Vats']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.total_vats]]"></oj-bind-text>
-          </span>
-        </div>
-        <div class="oj-flex oj-flex-item oj-sm-6">
-          <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
-            <oj-bind-text value="[['Total Amount']]"></oj-bind-text>
-          </span>
-          <span style="font-weight: bold;">
-            <oj-bind-text value="[[invoice.total_amount]]"></oj-bind-text>
-          </span>
+    <div class="invContainer">
+      <h3 class="invHeaderTitle">Invoice</h3>
+      <div id="invBodyId" class="invBody">
+        <div class="invHeader oj-flex" style="align-items: center;">
+          <div class="oj-flex oj-flex-item oj-sm-12">
+            <span class="oj-flex-item oj-sm-3" style="font-size: 13px;">
+              <oj-bind-text value="[['Customer']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.customer_name]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-12">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Total Items Discount']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.total_items_discount]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-12">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Extra invoice Discount']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.extra_invoice_discount]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Total Sales']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.total_sales]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Total Discount']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.total_discount]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Value added Tax']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.value_added_tax]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Withholding Tax']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.with_holding_tax]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Total Vats']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.total_vats]]"></oj-bind-text>
+            </span>
+          </div>
+          <div class="oj-flex oj-flex-item oj-sm-6">
+            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+              <oj-bind-text value="[['Total Amount']]"></oj-bind-text>
+            </span>
+            <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.total_amount]]"></oj-bind-text>
+            </span>
+          </div>
         </div>
       </div>
-    </oj-collapsible>
-    <oj-collapsible id="c2" expanded="true">
-      <h3 slot="header">Lines</h3>
-      <div class="invLines">
+      <i id="invHeaderIcondId" class="fas fa-angle-up invIconDown" on-click="[[onInvHeaderIconClicked]]"></i>
+      <div class="astrodivider">
+        <div class="astrodividermask"></div>
+      </div>
+    </div>
+    <div class="linesContainer">
+      <h3 class="invHeaderTitle">Lines</h3>
+      <div class="linesBody">
         <oj-list-view id="linesListId" data="[[linesList]]" selection-mode="single" selection-required="true"
           style="overflow-x: hidden;">
           <template slot="itemTemplate" data-oj-as="item">
@@ -120,18 +126,18 @@
                   </div>
                   <div class="oj-flex oj-flex-item oj-sm-6">
                     <span class="oj-flex-item oj-sm-6" style="font-size: 13px;">
-                      <oj-bind-text value="[['Unit Price']]"></oj-bind-text>
-                    </span>
-                    <span style="font-weight: bold;font-size: 14px;">
-                      <oj-bind-text value="[[item.data.unit_price]]"></oj-bind-text>
-                    </span>
-                  </div>
-                  <div class="oj-flex oj-flex-item oj-sm-6">
-                    <span class="oj-flex-item oj-sm-6" style="font-size: 13px;">
                       <oj-bind-text value="[['Total Price']]"></oj-bind-text>
                     </span>
                     <span style="font-weight: bold;font-size: 14px;">
                       <oj-bind-text value="[[item.data.total_price]]"></oj-bind-text>
+                    </span>
+                  </div>
+                  <div class="oj-flex oj-flex-item oj-sm-6">
+                    <span class="oj-flex-item oj-sm-6" style="font-size: 13px;">
+                      <oj-bind-text value="[['Unit Price']]"></oj-bind-text>
+                    </span>
+                    <span style="font-weight: bold;font-size: 14px;">
+                      <oj-bind-text value="[[item.data.unit_price]]"></oj-bind-text>
                     </span>
                   </div>
               </oj-list-item-layout>
@@ -139,10 +145,7 @@
           </template>
         </oj-list-view>
       </div>
-    </oj-collapsible>
-    <!-- <p style="color: #000;">
-      <oj-bind-text value="[[invStatus]]"></oj-bind-text>
-    </p> -->
+    </div>
     <div id="actionMenuId" class="overlay centerItemsVertical">
       <oj-bind-if test="[[invStatus() == 'Pending' ||invStatus() == 'NeedMoreInfoReplied']]">
         <i class="fas fa-check-double invoiceActionsIcon" style="color: #56f456;" on-click="[[approveAction]]"></i>

@@ -39,7 +39,16 @@ define(['ojs/ojcore', 'knockout',
       self.linesArr = ko.observableArray([]);
       self.linesList = new ArrayDataProvider(self.linesArr, { keyAttributes: 'id' });
       //------------------------------------------------
-      self.prefetch = function () {
+
+      self.onInvHeaderIconClicked = function () {
+        document.getElementById('invBodyId').classList.toggle('hideInvBody');
+        if (document.getElementById('invHeaderIcondId').classList.contains('fa-angle-up')) {
+          document.getElementById('invHeaderIcondId').classList.remove('fa-angle-up');
+          document.getElementById('invHeaderIcondId').classList.add('fa-angle-down');
+        } else {
+          document.getElementById('invHeaderIcondId').classList.remove('fa-angle-down');
+          document.getElementById('invHeaderIcondId').classList.add('fa-angle-up');
+        }
       }
 
       self.connected = function () {

@@ -1,6 +1,6 @@
 {
-  "name": "org.oraclejet.sbstarterappjettemp",
-  "displayName": "SbStarterAppJet-temp",
+  "name": "org.oraclejet.einvoice",
+  "displayName": "E-Invoice",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -20,8 +20,8 @@
       "cordova-plugin-whitelist": {}
     },
     "platforms": [
-      "android",
-      "browser"
+      "browser",
+      "android"
     ]
   },
   "dependencies": {

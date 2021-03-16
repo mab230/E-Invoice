@@ -50,12 +50,12 @@
                                 </span>
                             </div>
                             <div class="oj-flex-item oj-sm-3" style="align-items: center;display: flex;">
-                                <span style="font-weight: 500;">
+                                <span style="font-weight: 700;">
                                     <oj-bind-text value="[[item.data.total_val +' $']]"></oj-bind-text>
                                 </span>
                             </div>
                             <div class="oj-flex-item oj-sm-3 invListActionsContainer"
-                                style="display: flex;align-items: center;">
+                                style="display: flex;align-items: center;justify-content: center;">
                                 <oj-bind-if test="[[invStatus == 'Pending' ||invStatus == 'NeedMoreInfoReplied']]">
                                     <oj-button on-oj-action="[[showActionMenu]]" style="width: 40px;">
                                         <span slot='startIcon' class="oj-ux-ico-menu"

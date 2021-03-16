@@ -5510,7 +5510,7 @@ textarea,
 
 .singInLogo img {
     display: block;
-    margin: 30px auto;
+    margin: 70% auto 30px auto;
     padding: 20px 45px;
     background: rgba(0, 255, 255, .3);
     border-radius: 7px 40px;
@@ -5774,4 +5774,64 @@ textarea,
 
 .scrollOptions i:hover {
     transform: scale(1.19) rotate(360deg);
+}
+
+/* start invoice Lines style  */
+.invHeaderTitle {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 2px solid #b3b3b3;
+    margin: 0 !important;
+    color:#716e6e;
+}
+
+.invBody {
+    height: 124px;
+    transition: .5s ease-in-out;
+}
+
+.hideInvBody {
+    height: 0 !important;
+    overflow: hidden;
+}
+
+.invIconDown {
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    margin: 15px auto;
+    background: #0f3bdc;
+    line-height: 35px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    box-shadow: 0px 0px 2px 2px rgb(208 208 208);
+    cursor: pointer;
+}
+
+.invIconDown:hover {
+    transform: scale(1.09);
+}
+
+.astrodivider {
+    margin: 5px auto 0px auto;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.astrodividermask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.astrodividermask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 171px / 12px;
+    box-shadow: 0 0 8px #170bff;
 }
