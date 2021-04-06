@@ -47,32 +47,41 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
       self.milestonesArr = ko.observableArray([]);
       self.milestonesList = new ArrayDataProvider(self.milestonesArr, { keyAttributes: 'id' });
 
-      self.onCustomerSelect = function () {
-        const selectedItems = self.selectedCustomer()._keys;
-        console.log(selectedItems);
-        if (selectedItems.size) {
-          let customerId = selectedItems.values().next().value;
-          if (customerId) {
-            let customer = self.customersArr().find(customer => customer.id == customerId);
-            console.log('customerId - ', customerId, customer);
-            self.customerContractsArr(customer.contracts);
-            document.getElementById('customersContainerId').classList.add('hideCustomersContainer');
-            document.getElementById('contractsContianerId').classList.add('showContractsContianer');
-            document.getElementById('contractsContianerId').classList.remove('hideContractContainer');
-          }
+      self.onCustomerSelect = function (customerId) {
+        console.log('>>>>>>> ', customerId);
+        if (customerId) {
+          let customer = self.customersArr().find(customer => customer.id == customerId);
+          console.log('customerId - ', customerId, customer);
+          self.customerContractsArr(customer.contracts);
+          document.getElementById('customersContainerId').classList.add('hideCustomersContainer');
+          document.getElementById('contractsContianerId').classList.add('showContractsContianer');
+          document.getElementById('contractsContianerId').classList.remove('hideContractContainer');
         }
       }
+
+      this.handleCustomerSelectedChanged = (event) => {
+        self.selectedCustomer(event.detail.value);
+        // console.log('selection handle -- ', event.detail.value._keys.values().next().value);
+        // const selectedItems = event.detail.value._keys;
+        // if (selectedItems.size) {
+        //   let customerId = selectedItems.values().next().value;
+        //   if (customerId) {
+        //     let customer = self.customersArr().find(customer => customer.id == customerId);
+        //     console.log('customerId - ', customerId, customer);
+        //     self.customerContractsArr(customer.contracts);
+        //     document.getElementById('customersContainerId').classList.add('hideCustomersContainer');
+        //     document.getElementById('contractsContianerId').classList.add('showContractsContianer');
+        //     document.getElementById('contractsContianerId').classList.remove('hideContractContainer');
+        //   }
+        // }
+      };
 
       self.onBackContractSelect = function () {
         document.getElementById('customersContainerId').classList.remove('hideCustomersContainer');
         document.getElementById('contractsContianerId').classList.remove('showContractsContianer');
       }
 
-      self.onForwardContractSelect = function () {
-        const selectedItems = self.selectedContract()._keys;
-        console.log(selectedItems);
-        if (selectedItems.size) {
-          let contractId = selectedItems.values().next().value;
+      self.onForwardContractSelect = function (contractId) {
           if (contractId) {
             let contract = self.customerContractsArr().find(contract => contract.id == contractId);
             console.log('contractId - ', contractId, contract);
@@ -84,7 +93,6 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
             document.getElementById('contractsContianerId').classList.add('hideContractContainer');
             document.getElementById('milestonesId').classList.remove('hideMilestoneContainer');
           }
-        }
       }
 
       self.sendInvoice = function () {

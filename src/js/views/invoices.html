@@ -62,7 +62,7 @@
                                             style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
                                     </oj-button>
                                 </oj-bind-if>
-                                <oj-button on-oj-action="[[showLines]]" style="width: 40px;margin-left: 5px;">
+                                <oj-button on-oj-action="[[function(){showLines(item.data.id)}]]" style="width: 40px;margin-left: 5px;">
                                     <span slot='startIcon' class="fas fa-chevron-circle-right"
                                         style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
                                 </oj-button>
@@ -79,7 +79,7 @@
                 <span>
                     <oj-bind-text value="[['Approve']]"></oj-bind-text>
                 </span>
-                <oj-bind-if test="[[invStatus == 'Pending' && invType == 1]]">
+                <oj-bind-if test="[[(invStatus == 'Pending' || invStatus == 'NeedMoreInfoReplied') && invType == 1]]">
                     <i class="fas fa-question-circle invoiceActionsIcon" style="color: #fd7e14;"
                         on-click="[[needMoreInfoAction]]"></i>
                     <span>

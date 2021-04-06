@@ -157,17 +157,13 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
         document.getElementById('actionMenuId').classList.remove('showOverlay');
       }
 
-      self.showLines = function () {
-        let selectedItems = self.selectedInvoice()._keys;
-        if (selectedItems.size) {
-          let invId = selectedItems.values().next().value;
-          let selectedInv = self.invArr().find(inv => inv.id == invId);
-          let invInfo = localStorage.getItem('invInfo');
-          if (invInfo) {
-            let invInfoObj = JSON.parse(invInfo);
-            localStorage.setItem('invInfo', JSON.stringify({ ...invInfoObj, ...selectedInv }));
-            app.router.go('lines');
-          }
+      self.showLines = function (invId) {
+        let selectedInv = self.invArr().find(inv => inv.id == invId);
+        let invInfo = localStorage.getItem('invInfo');
+        if (invInfo) {
+          let invInfoObj = JSON.parse(invInfo);
+          localStorage.setItem('invInfo', JSON.stringify({ ...invInfoObj, ...selectedInv }));
+          app.router.go('lines');
         }
       }
 

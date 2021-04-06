@@ -25,8 +25,8 @@
           <oj-bind-text value="[['Customers']]"></oj-bind-text>
         </h3>
       </div>
-      <oj-list-view id="customersListId" aria-label="list to show selection features" data="[[customersList]]"
-        selection-mode="single" selection-required="true" selected="{{selectedCustomer}}">
+      <oj-list-view id="customersListId" aria-label="list to show selection features" selection-required="true"
+        on-selected-changed="[[handleCustomerSelectedChanged]]" data="[[customersList]]" selection-mode="single">
         <template slot="itemTemplate" data-oj-as="item">
           <li>
             <oj-list-item-layout>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="oj-flex oj-flex-item oj-sm-2">
                   <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
-                    on-oj-action="[[onCustomerSelect]]">
+                    on-oj-action="[[function(){onCustomerSelect(item.data.id)}]]">
                     <span slot='startIcon' class="fas fa-chevron-circle-right"
                       style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
                   </oj-button>
@@ -77,7 +77,7 @@
         </oj-button>
       </div>
       <oj-list-view id="customerContractsListId" aria-label="list to show selection features"
-        data="[[customerContractList]]" selection-mode="single" selection-required="true" style="overflow-x: hidden;"
+        data="[[customerContractList]]" selection-mode="single" selection-required="true"
         selected="{{selectedContract}}">
         <template slot="itemTemplate" data-oj-as="item">
           <li>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="oj-flex oj-flex-item oj-sm-4" style="justify-content: flex-end;">
                   <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
-                    on-oj-action="[[onForwardContractSelect]]">
+                    on-oj-action="[[function(){onForwardContractSelect(item.data.id)}]]">
                     <span slot='startIcon' class="fas fa-chevron-circle-right"
                       style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
                   </oj-button>

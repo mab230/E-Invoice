@@ -17,7 +17,7 @@
 'use strict';
 
 (function () {
-  
+
   function _ojIsIE11() {
     var nAgt = navigator.userAgent;
     return nAgt.indexOf('MSIE') !== -1 || !!nAgt.match(/Trident.*rv:11./);
@@ -45,9 +45,9 @@
       'customElements': 'libs/webcomponents/custom-elements.min',
       'css': 'libs/require-css/css.min',
       'touchr': 'libs/touchr/touchr',
-      'corejs' : 'libs/corejs/shim',
+      'corejs': 'libs/corejs/shim',
       'chai': 'libs/chai/chai-4.2.0',
-      'regenerator-runtime' : 'libs/regenerator-runtime/runtime',
+      'regenerator-runtime': 'libs/regenerator-runtime/runtime',
       'pouchdb': 'libs/pouchdb/min/pouchdb-6.3.4',
       'pouchfind': 'libs/pouchdb/min/pouchdb.find',
       'persist': 'libs/persist/min',
@@ -72,7 +72,7 @@ require(['ojs/ojcore', 'knockout', 'appController', 'jquery', 'appUtils'], funct
   // The moment we load the app, we set the busy context.
   // This will be resolved when app's login page is ready to interact.
   appUtils.setPageBusyContext();
-  $(function() {
+  $(function () {
 
     function init() {
       oj.Router.sync().then(function () {
@@ -81,6 +81,22 @@ require(['ojs/ojcore', 'knockout', 'appController', 'jquery', 'appUtils'], funct
       }, function (error) {
         oj.Logger.error('Error in root start: ' + error.message);
       });
+
+      document.addEventListener("deviceready", onDeviceReady, false);
+      // device APIs are available
+      //
+      function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+      }
+
+      // Handle the back button
+      //
+      function onBackKeyDown(e) {
+        console.log('Back Btn Disbaled');
+        e.preventDefault();
+      }
+
     }
 
     // If running in a hybrid (e.g. Cordova) environment, we need to wait for the deviceready

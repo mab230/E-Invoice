@@ -88,6 +88,7 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
         if (self.year()) {
           getInvoicesStatus(self.month() + '-' + self.year(), 1);
           getInvoicesStatus(self.month() + '-' + self.year(), 2);
+          getVats(self.month() + '-' + self.year());
         } else {
         }
       }
@@ -96,6 +97,7 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
         if (self.month()) {
           getInvoicesStatus(self.month() + '-' + self.year(), 1);
           getInvoicesStatus(self.month() + '-' + self.year(), 2);
+          getVats(self.month() + '-' + self.year());
         } else {
         }
       }
@@ -123,12 +125,11 @@ define(['ojs/ojcore', 'knockout', 'ModuleHelper',
       self.scrollUp = function () {
         let pageContent = document.getElementById("pageContent");
         pageContent.scrollTop += 100;
-        console.log('scrollTop ', pageContent.scrollTop);
       }
+      
       self.scrollDown = function () {
         let pageContent = document.getElementById("pageContent");
         pageContent.scrollTop -= 100;
-        console.log('scrollTop ', pageContent.scrollTop);
       }
 
       function getVats(inv_date) {
