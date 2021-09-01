@@ -29,7 +29,7 @@ define(['ojs/ojcore', 'knockout', 'appController', 'appUtils',
       self.signIn = function () {
         if (self.isFormValid('signInFormGroup')) {
           console.log('User Name -- ', self.username(), '  password -- ', self.password());
-          if (self.username() == 'Mr Badawy' && self.password() == '12345678') {
+          if (self.username() == 'AB001@wind-is.com' && self.password() == '12345678') {
             console.log('Valid User');
             // self.goToFaqs();
             app.onLoginSuccess();
