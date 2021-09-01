@@ -9,25 +9,24 @@
  as shown at https://oss.oracle.com/licenses/upl/
  -->
 <div class="oj-hybrid-applayout-page">
-  <div class="oj-applayout-fixed-top">
-    <header role="banner" class="oj-hybrid-applayout-header">
-      <div class="oj-hybrid-applayout-bar-title">
-        <h1 class="oj-hybrid-applayout-header-title">Request Invoice</h1>
-      </div>
-    </header>
-  </div>
-  <div style="height: 57px;"></div>
-  <div role="main" class="oj-hybrid-applayout-content">
-    <div id="customersContainerId" class="customersContainer">
-      <div class="listTitle">
-        <i class="fas fa-users-cog"></i>
-        <h3>
-          <oj-bind-text value="[['Customers']]"></oj-bind-text>
-        </h3>
-      </div>
-      <oj-list-view id="customersListId" aria-label="list to show selection features" selection-required="true"
-        on-selected-changed="[[handleCustomerSelectedChanged]]" data="[[customersList]]" selection-mode="single">
-        <template slot="itemTemplate" data-oj-as="item">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <div class="oj-hybrid-applayout-bar-title">
+                <h1 class="oj-hybrid-applayout-header-title">Request Invoice</h1>
+            </div>
+        </header>
+    </div>
+    <div style="height: 57px;"></div>
+    <div role="main" class="oj-hybrid-applayout-content">
+        <div id="customersContainerId" class="customersContainer">
+            <div class="listTitle">
+                <i class="fas fa-users-cog"></i>
+                <h3>
+                    <oj-bind-text value="[['Customers']]"></oj-bind-text>
+                </h3>
+            </div>
+            <oj-list-view id="customersListId" aria-label="list to show selection features" selection-required="true" on-selected-changed="[[handleCustomerSelectedChanged]]" data="[[customersList]]" selection-mode="single">
+                <template slot="itemTemplate" data-oj-as="item">
           <li>
             <oj-list-item-layout>
               <div class="oj-flex" style="align-items: center;">
@@ -36,7 +35,7 @@
                     <oj-bind-text value="[['Name']]"></oj-bind-text>
                   </span>
                   <span style="font-weight: bold;">
-                    <oj-bind-text value="[[item.data.customer_name]]"></oj-bind-text>
+                    <oj-bind-text value="[[item.data.rcvr_name]]"></oj-bind-text>
                   </span>
                 </div>
                 <div class="oj-flex oj-flex-item oj-sm-5">
@@ -45,41 +44,41 @@
                       <oj-bind-text value="[['Code']]"></oj-bind-text>
                     </span>
                     <span style="font-weight: 500;">
-                      <oj-bind-text value="[[item.data.customer_code]]"></oj-bind-text>
+                      <oj-bind-text value="[[item.data.rcvr_tax_id]]"></oj-bind-text>
                     </span>
                   </div>
                 </div>
                 <div class="oj-flex oj-flex-item oj-sm-2">
-                  <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
+                  <!-- <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
                     on-oj-action="[[function(){onCustomerSelect(item.data.id)}]]">
                     <span slot='startIcon' class="fas fa-chevron-circle-right"
                       style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
+                  </oj-button> -->
+                  <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;"
+                    on-oj-action="[[function(){onCustomerSelect(item.data.rcvr_tax_id)}]]">
+                    <span slot='startIcon' class="fas fa-sticky-note"
+                      style="color: #4242ff !important;font-weight: 600;font-size: 35px;"></span>
                   </oj-button>
                 </div>
               </div>
             </oj-list-item-layout>
           </li>
         </template>
-      </oj-list-view>
-    </div>
-    <div id="contractsContianerId" class="contractsContianer">
-      <div class="listTitle">
-        <i class="fas fa-file-signature"></i>
-        <h3>
-          <oj-bind-text value="[['Contracts']]"></oj-bind-text>
-        </h3>
-        <div class="toolbarSpacer"></div>
-        <oj-button
-          style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;height: 35px; margin: 0px 10px;"
-          on-oj-action="[[onBackContractSelect]]">
-          <span slot='startIcon' class="fas fa-angle-left"
-            style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
-        </oj-button>
-      </div>
-      <oj-list-view id="customerContractsListId" aria-label="list to show selection features"
-        data="[[customerContractList]]" selection-mode="single" selection-required="true"
-        selected="{{selectedContract}}">
-        <template slot="itemTemplate" data-oj-as="item">
+            </oj-list-view>
+        </div>
+        <div id="contractsContianerId" class="contractsContianer">
+            <div class="listTitle">
+                <i class="fas fa-file-signature"></i>
+                <h3>
+                    <oj-bind-text value="[['Contracts']]"></oj-bind-text>
+                </h3>
+                <div class="toolbarSpacer"></div>
+                <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;height: 35px; margin: 0px 10px;" on-oj-action="[[onBackContractSelect]]">
+                    <span slot='startIcon' class="fas fa-angle-left" style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
+                </oj-button>
+            </div>
+            <oj-list-view id="customerContractsListId" aria-label="list to show selection features" data="[[customerContractList]]" selection-mode="single" selection-required="true" selected="{{selectedContract}}">
+                <template slot="itemTemplate" data-oj-as="item">
           <li>
             <oj-list-item-layout>
               <div class="oj-flex" style="align-items: center;">
@@ -102,25 +101,21 @@
             </oj-list-item-layout>
           </li>
         </template>
-      </oj-list-view>
-    </div>
-    <div id="milestonesId" class="milestonesContianer">
-      <div class="listTitle">
-        <i class="fas fa-align-center"></i>
-        <h3>
-          <oj-bind-text value="[['Milestones']]"></oj-bind-text>
-        </h3>
-        <div class="toolbarSpacer"></div>
-        <oj-button
-          style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;height: 35px; margin: 0px 10px;"
-          on-oj-action="[[onMilestoneBack]]">
-          <span slot='startIcon' class="fas fa-angle-left"
-            style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
-        </oj-button>
-      </div>
-      <oj-list-view id="customerContractsListId" aria-label="list to show selection features" data="[[milestonesList]]"
-        selection-mode="single" selection-required="true" style="overflow-x: hidden;" selected="{{selectedMilestone}}">
-        <template slot="itemTemplate" data-oj-as="item">
+            </oj-list-view>
+        </div>
+        <div id="milestonesId" class="milestonesContianer">
+            <div class="listTitle">
+                <i class="fas fa-align-center"></i>
+                <h3>
+                    <oj-bind-text value="[['Milestones']]"></oj-bind-text>
+                </h3>
+                <div class="toolbarSpacer"></div>
+                <oj-button style="width: 40px;margin-left: 20px;background: transparent !important;box-shadow: unset;height: 35px; margin: 0px 10px;" on-oj-action="[[onMilestoneBack]]">
+                    <span slot='startIcon' class="fas fa-angle-left" style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
+                </oj-button>
+            </div>
+            <oj-list-view id="customerContractsListId" aria-label="list to show selection features" data="[[milestonesList]]" selection-mode="single" selection-required="true" style="overflow-x: hidden;" selected="{{selectedMilestone}}">
+                <template slot="itemTemplate" data-oj-as="item">
           <li>
             <oj-list-item-layout>
               <div class="oj-flex" style="align-items: center;">
@@ -142,39 +137,39 @@
             </oj-list-item-layout>
           </li>
         </template>
-      </oj-list-view>
-      <oj-bind-if test="[[selectedMilestonesLength() > 0]]">
-        <i class="fas fa-clipboard-check calcMileStoneBtn" on-click="[[sendInvoice]]">
-          <span class="selectedMilestonesNumber">
-            <oj-bind-text value="[[selectedMilestonesLength]]"></oj-bind-text>
-          </span>
-        </i>
-      </oj-bind-if>
+            </oj-list-view>
+
+
+        </div>
     </div>
-  </div>
-  <oj-dialog id="sendMilestoneDialog" dialog-title="Request Invoice">
-    <div slot="body">
-      <oj-validation-group id="sendMilestoneGroup">
-        <oj-form-layout max-columns="1" direction="row">
-          <oj-text-area label-hint="Message" rows="5" required="true" value="{{milestoneJustification}}">
-          </oj-text-area>
-        </oj-form-layout>
-      </oj-validation-group>
-    </div>
-    <div slot="footer">
-      <oj-button on-oj-action="[[requestInvoiceConfirm]]">Confirm</oj-button>
-      <oj-button on-oj-action="[[cancelRequestInvoice]]">Cancel</oj-button>
-    </div>
-  </oj-dialog>
-  <oj-dialog id="SendRequestInvoiceDialog" dialog-title="Confirm Request Invoice">
-    <div slot="body">
-      <span class="confirmInvText">
+    <i class="fas fa-clipboard-check calcMileStoneBtn" on-click="[[sendInvoice]]">
+      <span class="selectedMilestonesNumber">
+        <oj-bind-text value="[[selectedMilestonesLength]]"></oj-bind-text>
+      </span>
+    </i>
+    <oj-dialog id="sendMilestoneDialog" dialog-title="Request Invoice">
+        <div slot="body">
+            <oj-validation-group id="sendMilestoneGroup">
+                <oj-form-layout max-columns="1" direction="row">
+                    <oj-text-area label-hint="Message" rows="5" required="true" value="{{milestoneJustification}}">
+                    </oj-text-area>
+                </oj-form-layout>
+            </oj-validation-group>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[requestInvoiceConfirm]]">Confirm</oj-button>
+            <oj-button on-oj-action="[[cancelRequestInvoice]]">Cancel</oj-button>
+        </div>
+    </oj-dialog>
+    <oj-dialog id="SendRequestInvoiceDialog" dialog-title="Confirm Request Invoice">
+        <div slot="body">
+            <span class="confirmInvText">
         <oj-bind-text value="[['Are you sure you want to request invoice with selected milestones']]"></oj-bind-text>
       </span>
-    </div>
-    <div slot="footer">
-      <oj-button on-oj-action="[[acceptInvoiceConfirm]]">Confirm</oj-button>
-      <oj-button on-oj-action="[[cancelInvoiceConfirm]]">Cancel</oj-button>
-    </div>
-  </oj-dialog>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[acceptInvoiceConfirm]]">Confirm</oj-button>
+            <oj-button on-oj-action="[[cancelInvoiceConfirm]]">Cancel</oj-button>
+        </div>
+    </oj-dialog>
 </div>

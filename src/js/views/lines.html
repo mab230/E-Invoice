@@ -9,102 +9,101 @@
  as shown at https://oss.oracle.com/licenses/upl/
  -->
 <div class="oj-hybrid-applayout-page">
-  <div class="oj-applayout-fixed-top">
-    <header role="banner">
-      <oj-module class="oj-hybrid-applayout-header" config="[[headerConfig]]"></oj-module>
-    </header>
-  </div>
-  <div style="height: 58px;"></div>
-  <div role="main" class="oj-hybrid-applayout-content">
-    <div class="invContainer">
-      <h3 class="invHeaderTitle">Invoice</h3>
-      <div id="invBodyId" class="invBody">
-        <div class="invHeader oj-flex" style="align-items: center;">
-          <div class="oj-flex oj-flex-item oj-sm-12">
-            <span class="oj-flex-item oj-sm-3" style="font-size: 13px;">
+    <div class="oj-applayout-fixed-top">
+        <header role="banner">
+            <oj-module class="oj-hybrid-applayout-header" config="[[headerConfig]]"></oj-module>
+        </header>
+    </div>
+    <div style="height: 58px;"></div>
+    <div role="main" class="oj-hybrid-applayout-content">
+        <div class="invContainer">
+            <h3 class="invHeaderTitle">Invoice</h3>
+            <div id="invBodyId" class="invBody">
+                <div class="invHeader oj-flex" style="align-items: center;">
+                    <div class="oj-flex oj-flex-item oj-sm-12">
+                        <span class="oj-flex-item oj-sm-3" style="font-size: 13px;">
               <oj-bind-text value="[['Customer']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.customer_name]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.rcvr_name]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-12">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-12">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Total Items Discount']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.total_items_discount]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.internalid]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-12">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-12">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Extra invoice Discount']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.extra_invoice_discount]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.rcvr_id]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Total Sales']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.total_sales]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.payment_bankaccountiban]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Total Discount']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.total_discount]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.payment_swiftcode]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Value added Tax']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
+                        <span style="font-weight: bold;">
               <oj-bind-text value="[[invoice.value_added_tax]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Withholding Tax']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.with_holding_tax]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.modified_by]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Total Vats']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.total_vats]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.modified_by]]"></oj-bind-text>
             </span>
-          </div>
-          <div class="oj-flex oj-flex-item oj-sm-6">
-            <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
+                    </div>
+                    <div class="oj-flex oj-flex-item oj-sm-6">
+                        <span class="oj-flex-item oj-sm-7" style="font-size: 13px;">
               <oj-bind-text value="[['Total Amount']]"></oj-bind-text>
             </span>
-            <span style="font-weight: bold;">
-              <oj-bind-text value="[[invoice.total_amount]]"></oj-bind-text>
+                        <span style="font-weight: bold;">
+              <oj-bind-text value="[[invoice.modified_by]]"></oj-bind-text>
             </span>
-          </div>
+                    </div>
+                </div>
+            </div>
+            <i id="invHeaderIcondId" class="fas fa-angle-up invIconDown" on-click="[[onInvHeaderIconClicked]]"></i>
+            <div class="astrodivider">
+                <div class="astrodividermask"></div>
+            </div>
         </div>
-      </div>
-      <i id="invHeaderIcondId" class="fas fa-angle-up invIconDown" on-click="[[onInvHeaderIconClicked]]"></i>
-      <div class="astrodivider">
-        <div class="astrodividermask"></div>
-      </div>
-    </div>
-    <div class="linesContainer">
-      <h3 class="invHeaderTitle">Lines</h3>
-      <div class="linesBody">
-        <oj-list-view id="linesListId" data="[[linesList]]" selection-mode="single" selection-required="true"
-          style="overflow-x: hidden;">
-          <template slot="itemTemplate" data-oj-as="item">
+        <div class="linesContainer">
+            <h3 class="invHeaderTitle">Lines</h3>
+            <div class="linesBody">
+                <oj-list-view id="linesListId" data="[[linesList]]" selection-mode="single" selection-required="true" style="overflow-x: hidden;">
+                    <template slot="itemTemplate" data-oj-as="item">
             <li>
               <oj-list-item-layout>
                 <div class="oj-flex" style="align-items: center;">
@@ -113,7 +112,7 @@
                       <oj-bind-text value="[['Code Name']]"></oj-bind-text>
                     </span>
                     <span style="font-weight: bold;font-size: 14px;">
-                      <oj-bind-text value="[[item.data.code_name]]"></oj-bind-text>
+                      <oj-bind-text value="[[item.data.line_description]]"></oj-bind-text>
                     </span>
                   </div>
                   <div class="oj-flex oj-flex-item oj-sm-6">
@@ -129,7 +128,7 @@
                       <oj-bind-text value="[['Total Price']]"></oj-bind-text>
                     </span>
                     <span style="font-weight: bold;font-size: 14px;">
-                      <oj-bind-text value="[[item.data.total_price]]"></oj-bind-text>
+                      <oj-bind-text value="[[item.data.sales_total]]"></oj-bind-text>
                     </span>
                   </div>
                   <div class="oj-flex oj-flex-item oj-sm-6">
@@ -143,49 +142,48 @@
               </oj-list-item-layout>
             </li>
           </template>
-        </oj-list-view>
-      </div>
-    </div>
-    <div id="actionMenuId" class="overlay centerItemsVertical">
-      <oj-bind-if test="[[invStatus() == 'Pending' ||invStatus() == 'NeedMoreInfoReplied']]">
-        <i class="fas fa-check-double invoiceActionsIcon" style="color: #56f456;" on-click="[[approveAction]]"></i>
-        <span>
+                </oj-list-view>
+            </div>
+        </div>
+        <div id="actionMenuId" class="overlay centerItemsVertical">
+            <oj-bind-if test="[[invStatus() == 'SENT_FOR_APPROVAL' ]]">
+                <i class="fas fa-check-double invoiceActionsIcon" style="color: #56f456;" on-click="[[approveAction]]"></i>
+                <span>
           <oj-bind-text value="[['Approve']]"></oj-bind-text>
         </span>
-        <oj-bind-if test="[[invoice.inv_type == 1]]">
-          <i class="fas fa-question-circle invoiceActionsIcon" style="color: #fd7e14;"
-            on-click="[[needMoreInfoAction]]"></i>
-          <span>
+                <oj-bind-if test="[[invStatus() == 'SENT_FOR_APPROVAL']]">
+                    <i class="fas fa-question-circle invoiceActionsIcon" style="color: #fd7e14;" on-click="[[needMoreInfoAction]]"></i>
+                    <span>
             <oj-bind-text value="[['Need more Informations']]"></oj-bind-text>
           </span>
-        </oj-bind-if>
-      </oj-bind-if>
-      <oj-bind-if test="[[invStatus() == 'Pending' && invoice.inv_type == 2]]">
-        <i class="fas fa-share invoiceActionsIcon" style="color: #f83939;" on-click="[[rejectAction]]"></i>
-        <span>
-          <oj-bind-text value="[['Reject']]"></oj-bind-text>
-        </span>
-      </oj-bind-if>
-      <i class="fas fa-times-circle invoiceActionsIcon" on-click="[[closeActionMenu]]"></i>
-      <span>
+                </oj-bind-if>
+            </oj-bind-if>
+            <!-- <oj-bind-if test="[[invStatus() == 'SENT_FOR_APPROVAL']]">
+                <i class="fas fa-share invoiceActionsIcon" style="color: #f83939;" on-click="[[rejectAction]]"></i>
+                <span>
+          <oj-bind-text value="[['Reject']]"></oj-bind-text> -->
+            </span>
+            </oj-bind-if>
+            <i class="fas fa-times-circle invoiceActionsIcon" on-click="[[closeActionMenu]]"></i>
+            <span>
         <oj-bind-text value="[['Cancel']]"></oj-bind-text>
       </span>
+        </div>
+        <oj-bind-if test="[[invStatus() == 'SENT_FOR_APPROVAL' || invStatus() == 'NeedMoreInfoReplied']]">
+            <i class="fas fa-ellipsis-v linesActionBtn" on-click="[[showActionMenu]]"></i>
+        </oj-bind-if>
     </div>
-    <oj-bind-if test="[[invStatus() == 'Pending' || invStatus() == 'NeedMoreInfoReplied']]">
-      <i class="fas fa-ellipsis-v linesActionBtn" on-click="[[showActionMenu]]"></i>
-    </oj-bind-if>
-  </div>
-  <oj-dialog id="needMoreInfoDialog" dialog-title="Need More Informations">
-    <div slot="body">
-      <oj-validation-group id="needMoreInfoGroup">
-        <oj-form-layout max-columns="1" direction="row">
-          <oj-text-area label-hint="Justifications" rows="5" required="true"></oj-text-area>
-        </oj-form-layout>
-      </oj-validation-group>
-    </div>
-    <div slot="footer">
-      <oj-button on-oj-action="[[needMoreInfoConfirm]]">Confirm</oj-button>
-      <oj-button on-oj-action="[[cancelNeedMoreInfo]]">Cancel</oj-button>
-    </div>
-  </oj-dialog>
+    <oj-dialog id="needMoreInfoDialog" dialog-title="Need More Informations">
+        <div slot="body">
+            <oj-validation-group id="needMoreInfoGroup">
+                <oj-form-layout max-columns="1" direction="row">
+                    <oj-text-area label-hint="Justifications" value="{{commentForReject}}" rows="5" required="true"></oj-text-area>
+                </oj-form-layout>
+            </oj-validation-group>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[needMoreInfoConfirm]]">Confirm</oj-button>
+            <oj-button on-oj-action="[[cancelNeedMoreInfo]]">Cancel</oj-button>
+        </div>
+    </oj-dialog>
 </div>

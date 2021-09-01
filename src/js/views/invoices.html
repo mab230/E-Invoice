@@ -15,23 +15,19 @@
         </header>
     </div>
     <div style="height: 69px;"></div>
-    <div role="main" class="oj-hybrid-applayout-content" >
+    <div role="main" class="oj-hybrid-applayout-content">
         <div class="invStatus">
             <oj-bind-text value="[[invStatus]]"></oj-bind-text>
         </div>
         <div class="searchHeader" style="margin: 0 10px !important;">
             <oj-form-layout direction="row" max-columns="2">
-                <oj-select-single data="[[monthsADP]]" label-hint="Month" value="{{month}}"
-                    on-value-changed="[[monthSelectedAction]]">
+                <oj-select-single data="[[monthsADP]]" label-hint="Month" value="{{month}}" on-value-changed="[[monthSelectedAction]]">
                 </oj-select-single>
-                <oj-select-single data="[[yearsADP]]" label-hint="Year" value="{{year}}"
-                    on-value-changed="[[yearSelectedAction]]">
+                <oj-select-single data="[[yearsADP]]" label-hint="Year" value="{{year}}" on-value-changed="[[yearSelectedAction]]">
                 </oj-select-single>
             </oj-form-layout>
         </div>
-        <oj-list-view id="invListId" aria-label="list to show selection features" data="[[invList]]"
-            selection-mode="single" selection-required="true" on-selected-changed="[[invListSelectedChanged]]"
-            selected="{{selectedInvoice}}" style="overflow-x: hidden;">
+        <oj-list-view id="invListId" aria-label="list to show selection features" expanded="[[expanded]]" data="[[invList]]" selection-mode="single" selection-required="true" on-selected-changed="[[invListSelectedChanged]]" selected="{{selectedInvoice}}" style="overflow-x: hidden;">
             <template slot="itemTemplate" data-oj-as="item">
                 <li>
                     <oj-list-item-layout>
@@ -42,29 +38,29 @@
                                         <oj-bind-text value="[['Customer ']]"></oj-bind-text>
                                     </span>
                                     <span style="font-weight: bold;">
-                                        <oj-bind-text value="[[item.data.customer_name]]"></oj-bind-text>
+                                        <oj-bind-text value="[[item.data.rcvr_name]]"></oj-bind-text>
                                     </span>
                                 </div>
                                 <span class="oj-flex-item" style="font-size: 12px;color: #706a6a;font-weight: 400;">
-                                    <oj-bind-text value="[[item.data.internal_code]]"></oj-bind-text>
+                                    <oj-bind-text value="[[item.data.internalid]]"></oj-bind-text>
                                 </span>
                             </div>
                             <div class="oj-flex-item oj-sm-3" style="align-items: center;display: flex;">
                                 <span style="font-weight: 700;">
-                                    <oj-bind-text value="[[item.data.total_val +' $']]"></oj-bind-text>
+                                    <oj-bind-text value="[[item.data.total +' $']]"></oj-bind-text>
                                 </span>
                             </div>
                             <div class="oj-flex-item oj-sm-3 invListActionsContainer"
                                 style="display: flex;align-items: center;justify-content: center;">
-                                <oj-bind-if test="[[invStatus == 'Pending' ||invStatus == 'NeedMoreInfoReplied']]">
+                                <oj-bind-if test="[[invStatus == 'SENT_FOR_APPROVAL'|| invStatus=='REVIEW' || canReject == 'true' ||invStatus == 'VALIDATED'||invStatus == 'SUBMITED']]">
                                     <oj-button on-oj-action="[[showActionMenu]]" style="width: 40px;">
                                         <span slot='startIcon' class="oj-ux-ico-menu"
-                                            style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
+                                            style="color: #234d93 !important;font-weight: 600;font-size: 35px;"></span>
                                     </oj-button>
                                 </oj-bind-if>
-                                <oj-button on-oj-action="[[function(){showLines(item.data.id)}]]" style="width: 40px;margin-left: 5px;">
+                                <oj-button on-oj-action="[[function(){showLines(item.data.document_id)}]]" style="width: 40px;margin-left: 5px;">
                                     <span slot='startIcon' class="fas fa-chevron-circle-right"
-                                        style="color: #1f1eff !important;font-weight: 600;font-size: 35px;"></span>
+                                        style="color: #234d93 !important;font-weight: 600;font-size: 35px;"></span>
                                 </oj-button>
                             </div>
                         </div>
@@ -73,24 +69,28 @@
             </template>
         </oj-list-view>
         <div id="actionMenuId" class="overlay centerItemsVertical">
-            <oj-bind-if test="[[invStatus == 'Pending' ||invStatus == 'NeedMoreInfoReplied']]">
-                <i class="fas fa-check-double invoiceActionsIcon" style="color: #56f456;"
-                    on-click="[[approveAction]]"></i>
+            <oj-bind-if test="[[invStatus == 'SENT_FOR_APPROVAL' ||invStatus == 'NeedMoreInfoReplied']]">
+                <i class="fas fa-check-double invoiceActionsIcon" style="color: #56f456;" on-click="[[approveAction]]"></i>
                 <span>
                     <oj-bind-text value="[['Approve']]"></oj-bind-text>
                 </span>
-                <oj-bind-if test="[[(invStatus == 'Pending' || invStatus == 'NeedMoreInfoReplied') && invType == 1]]">
-                    <i class="fas fa-question-circle invoiceActionsIcon" style="color: #fd7e14;"
-                        on-click="[[needMoreInfoAction]]"></i>
+                <oj-bind-if test="[[(invStatus == 'SENT_FOR_APPROVAL' || invStatus == 'NeedMoreInfoReplied')]]">
+                    <i class="fas fa-question-circle invoiceActionsIcon" style="color: #fd7e14;" on-click="[[needMoreInfoAction]]"></i>
                     <span>
                         <oj-bind-text value="[['Need more Informations']]"></oj-bind-text>
                     </span>
                 </oj-bind-if>
             </oj-bind-if>
-            <oj-bind-if test="[[invStatus == 'Pending' && invType == 2]]">
+            <oj-bind-if test="[[canReject() == 'true' ]]">
                 <i class="fas fa-share invoiceActionsIcon" style="color: #f83939;" on-click="[[rejectAction]]"></i>
                 <span>
                     <oj-bind-text value="[['Reject']]"></oj-bind-text>
+                </span>
+            </oj-bind-if>
+            <oj-bind-if test="[[invStatus == 'VALIDATED' || invStatus == 'SUBMITED' ]]">
+                <i class="fas fa-share invoiceActionsIcon" style="color: #f83939;" on-click="[[cancelDocumentAction]]"></i>
+                <span>
+                    <oj-bind-text value="[['Cancel Document']]"></oj-bind-text>
                 </span>
             </oj-bind-if>
             <i class="fas fa-times-circle invoiceActionsIcon" on-click="[[closeActionMenu]]"></i>
@@ -103,7 +103,7 @@
         <div slot="body">
             <oj-validation-group id="needMoreInfoGroup">
                 <oj-form-layout max-columns="1" direction="row">
-                    <oj-text-area label-hint="Justifications" rows="5" required="true"></oj-text-area>
+                    <oj-text-area label-hint="Justifications" value="{{commentForReject}}" rows="5" required="true"></oj-text-area>
                 </oj-form-layout>
             </oj-validation-group>
         </div>
@@ -113,4 +113,46 @@
         </div>
     </oj-dialog>
 
+    <oj-dialog id="RejectDialog" dialog-title="Rejection Reason">
+        <div slot="body">
+            <oj-validation-group id="rejectConfirmGroup">
+                <oj-form-layout max-columns="1" direction="row">
+                    <oj-text-area label-hint="Justifications" value="{{commentForRejectDilog}}" rows="5" required="true"></oj-text-area>
+                </oj-form-layout>
+            </oj-validation-group>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[rejectConfirm]]">Confirm</oj-button>
+            <oj-button on-oj-action="[[cancelReject]]">Cancel</oj-button>
+        </div>
+    </oj-dialog>
+
+    <oj-dialog id="responsRejectDialog" dialog-title="Reject Resopnse">
+        <div slot="body">
+            <h3 style="color: black !important">
+                <span oj-typography-body-md oj-text-color-primary><oj-bind-text value='[[rejectResult]]'></oj-bind-text></span>
+            </h3>
+
+            <h4 style="color: black !important">
+                <oj-bind-text value='[[errorMessage()]]'></oj-bind-text>
+            </h4>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[responsRejectDialogclose]]">close</oj-button>
+        </div>
+    </oj-dialog>
+
+    <oj-dialog id="cancleDialog" dialog-title="Canslation Comment ">
+        <div slot="body">
+            <oj-validation-group id="cancleGroup">
+                <oj-form-layout max-columns="1" direction="row">
+                    <oj-text-area label-hint="Justifications" value="{{commentForCancle}}" rows="5" required="true"></oj-text-area>
+                </oj-form-layout>
+            </oj-validation-group>
+        </div>
+        <div slot="footer">
+            <oj-button on-oj-action="[[cancleConfirm]]">Confirm</oj-button>
+            <oj-button on-oj-action="[[cancletionCancle]]">Cancel</oj-button>
+        </div>
+    </oj-dialog>
 </div>

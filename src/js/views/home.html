@@ -13,8 +13,7 @@
         <header role="banner" class="oj-hybrid-applayout-header">
             <div class="oj-flex-bar-start">
                 <oj-button id='navDrawerBtn' on-oj-action='[[toggleDrawer]]' chroming='borderless' display='icons'>
-                    <span slot='startIcon' class='oj-ux-ico-menu'></span>
-                    Navigation Drawer
+                    <span slot='startIcon' class='oj-ux-ico-menu'></span> Navigation Drawer
                 </oj-button>
             </div>
             <!--<div class="oj-hybrid-applayout-bar-title">
@@ -41,11 +40,9 @@
                         <div class="searchHeader">
                             <oj-validation-group id="signInFormGroup">
                                 <oj-form-layout direction="row" max-columns="2">
-                                    <oj-select-single data="[[monthsADP]]" label-hint="Month" value="{{month}}"
-                                        on-value-changed="[[monthSelectedAction]]">
+                                    <oj-select-single data="[[monthsADP]]" label-hint="Month" value="{{month}}" on-value-changed="[[monthSelectedAction]]">
                                     </oj-select-single>
-                                    <oj-select-single data="[[yearsADP]]" label-hint="Year" value="{{year}}"
-                                        on-value-changed="[[yearSelectedAction]]">
+                                    <oj-select-single data="[[yearsADP]]" label-hint="Year" value="{{year}}" on-value-changed="[[yearSelectedAction]]">
                                     </oj-select-single>
                                 </oj-form-layout>
                             </oj-validation-group>
@@ -54,12 +51,10 @@
                             <h3>
                                 <oj-bind-text value="[['Issued Invoices']]"></oj-bind-text>
                             </h3>
-                            <oj-chart id="pieChart" type="pie" data="[[issuedInvList]]" animation-on-display="auto"
-                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
-                                on-oj-drill="[[issuedSeriesDrillHandler]]" legend.position="bottom">
+                            <oj-chart id="pieChart" type="pie" data="[[issuedInvList]]" animation-on-display="auto" animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on" on-oj-drill="[[issuedSeriesDrillHandler]]" legend.position="bottom">
                                 <template slot='itemTemplate' data-oj-as='item'>
                                     <oj-chart-item value='[[item.data.status_count]]'
-                                        group-id='[[ [item.data.inv_type] ]]' series-id='[[item.data.status]]'>
+                                        group-id='[[ [item.data.document_direction] ]]' series-id='[[item.data.status_label]]'>
                                     </oj-chart-item>
                                 </template>
                             </oj-chart>
@@ -68,12 +63,10 @@
                             <h3>
                                 <oj-bind-text value="[['Recieved Invoices']]"></oj-bind-text>
                             </h3>
-                            <oj-chart id="pieChart" type="pie" data="[[recievedInvList]]" animation-on-display="auto"
-                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
-                                on-oj-drill="[[recievedSeriesDrillHandler]]" legend.position="bottom">
+                            <oj-chart id="pieChart" type="pie" data="[[recievedInvList]]" animation-on-display="auto" animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on" on-oj-drill="[[recievedSeriesDrillHandler]]" legend.position="bottom">
                                 <template slot='itemTemplate' data-oj-as='item'>
                                     <oj-chart-item value='[[item.data.status_count]]'
-                                        group-id='[[ [item.data.inv_type] ]]' series-id='[[item.data.status]]'>
+                                        group-id='[[ [item.data.document_direction] ]]' series-id='[[item.data.status_label]]'>
                                     </oj-chart-item>
                                 </template>
                             </oj-chart>
@@ -82,11 +75,8 @@
                             <h3>
                                 <oj-bind-text value="[['Vats']]"></oj-bind-text>
                             </h3>
-                            <oj-chart id="pieChart" type="pie" data="[[vatsList]]" animation-on-display="auto"
-                                animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on"
-                                on-oj-drill="[[vatsSeriesDrillHandler]]" style-defaults.pie-inner-radius="[[.5]]"
-                                pie-center.label="[[totalVatsValue]]" pie-center.label-style="[[{color:'#000'}]]"
-                                legend.position="bottom">
+                            <oj-chart id="pieChart" type="pie" data="[[vatsList]]" animation-on-display="auto" animation-on-data-change="auto" hover-behavior="dim" selection-mode="none" drilling="on" on-oj-drill="[[vatsSeriesDrillHandler]]" style-defaults.pie-inner-radius="[[.5]]"
+                                pie-center.label="[[totalVatsValue]]" pie-center.label-style="[[{color:'#000'}]]" legend.position="bottom">
                                 <template slot='itemTemplate' data-oj-as='item'>
                                     <oj-chart-item value='[[item.data.total_vat]]' group-id='[[ ["vat"] ]]'
                                         series-id='[[item.data.vat_type]]'>

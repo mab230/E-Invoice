@@ -35,7 +35,6 @@ hr {
 
 .acc-data-dtl-vlu {
     color: #21519e;
-
 }
 
 #acc-data-dtl-ctr {
@@ -109,7 +108,9 @@ hr {
     margin-right: 4%;
 }
 
+
 /*start custom 1 */
+
 .demo-signin-bg {
     height: 100vh !important;
     background-image: url(images/redwood_signin_bg.png) !important;
@@ -195,7 +196,6 @@ hr {
     padding: 15px !important;
 }
 
-
 .oj-button#nextBtn {
     color: white !important;
     background-color: transparent !important;
@@ -213,6 +213,7 @@ hr {
     color: #f28f3f !important;
 }
 
+
 /* h1, h2, h3, h4, h5, h6{
    color: white!important;
 } */
@@ -221,9 +222,12 @@ a {
     color: white !important;
 }
 
+
 /* li {
     color: white !important;
 } */
+
+
 /* 
 .oj-tabbar-item-label {
     color: white !important;
@@ -232,6 +236,7 @@ a {
 .oj-tabbar-item.oj-selected {
     border-color: #f28f3f !important;
 }
+
 
 /* .oj-message-detail {
     color: white !important;
@@ -318,6 +323,7 @@ a {
     box-shadow: unset;
 }
 
+
 /*start custom 2 */
 
 @import url("bootstrap.min.css");
@@ -325,8 +331,6 @@ a {
 @import url("owl.theme.default.css");
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
-
-
 a {
     transition: .2s all;
     color: #234d93 !important;
@@ -636,6 +640,7 @@ a:focus {
     /* padding: 56px 0; */
     margin-bottom: 45px;
 }
+
 
 /* #appCapsule.extra-header-active {
      padding-top: 106px 
@@ -1425,7 +1430,6 @@ blockquote.blockquote .blockquote-footer {
     0% {
         transform: rotate(0deg)
     }
-
     100% {
         transform: rotate(360deg)
     }
@@ -5478,7 +5482,9 @@ textarea,
     line-height: 1.2em
 }
 
+
 /**start login style **/
+
 .signin-container {
     position: absolute;
     top: 40%;
@@ -5522,7 +5528,9 @@ textarea,
     color: #000 !important;
 }
 
+
 /**start dashboard style **/
+
 .searchHeader {
     height: 66px;
     border-bottom: 1px solid #dfdddd;
@@ -5532,6 +5540,7 @@ textarea,
 .wallet-footer .item {
     margin-bottom: 10px;
 }
+
 
 /* .wallet-footer oj-chart:hover {
     border: 2px solid #7d7d7d;
@@ -5599,7 +5608,9 @@ textarea,
     box-shadow: none !important;
 }
 
+
 /**start lines style **/
+
 .invHeader {
     padding: 0 5px;
     color: rgba(0, 0, 0, 0.85);
@@ -5643,12 +5654,15 @@ textarea,
     flex: 1 1 auto;
 }
 
+
 /* 
 .oj-applayout-fixed-top {
     position: unset !important;
 } */
 
+
 /**start request invoice **/
+
 .contractsContianer {
     display: none;
     transition: .2s ease-in-out;
@@ -5776,13 +5790,15 @@ textarea,
     transform: scale(1.19) rotate(360deg);
 }
 
+
 /* start invoice Lines style  */
+
 .invHeaderTitle {
     text-align: center;
     padding: 5px 0;
     border-bottom: 2px solid #b3b3b3;
     margin: 0 !important;
-    color:#716e6e;
+    color: #716e6e;
 }
 
 .invBody {
@@ -5801,7 +5817,7 @@ textarea,
     width: 35px;
     height: 35px;
     margin: 15px auto;
-    background: #0f3bdc;
+    background: #234d93;
     line-height: 35px;
     font-size: 30px;
     border-radius: 50%;
